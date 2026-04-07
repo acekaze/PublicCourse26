@@ -1,0 +1,1324 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145413823-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-145413823-1');
+    
+</script>
+
+
+        
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="naver-site-verification" content="e4330643303d10d79e66ce9c1f7ce4eafa3229b4"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<meta property="og:title" content="종이책 제작 | 책 만들기 | 하루북" />
+<meta property="og:url" content="https://harubook.com" />
+<meta property="og:site_name" content="하루북" />
+<meta property="og:image" content="https://harubook.com/assets/images/logo/01_1.png" />
+<meta property="og:description" content="하루 10분, 나의 이야기가 책이 되는 시간" />
+<meta name="description" content="하루 10분, 나의 이야기가 책이 되는 시간" />
+<meta name="keywords" content="하루북,에스프레소북,종이책,이북,책쓰기,글쓰기,독립출판,셀프출판,학급비,harubook,espressobook,ebook,self publishing,indi publishing">
+
+<title>간편견적</title>
+
+<!-- Web fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,500,700" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="https://harubook.com/assets/images/favicon.ico">
+
+        <script type="text/javascript" src="/assets/js/jquery.js"></script>
+<script type="text/javascript" src="/assets/js/plugins.js"></script>
+<script type="text/javascript" src="/assets/js/functions.js"></script>
+
+<script type="text/javascript" src="/assets/fontawesome-pro-6.7.2-web/js/all.min.js"></script>
+<script type="text/javascript" src="/assets/js/custom.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+        <script type="text/javascript" src="/assets/vuejs/vue.min.js"></script>
+<script type="text/javascript" src="/assets/js/axios/axios.min.js"></script>
+<script type="text/javascript" src="/assets/vue-color/vue-color.min.js"></script>
+<script type="text/javascript" src="/assets/vue-loading-overlay/vue-loading.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap-colorpicker-2.5.2-dist/js/bootstrap-colorpicker.min.js"></script>
+<script type="text/javascript" src="/assets/sweetalert2-7.26.12-dist/sweetalert2.all.min.js"></script>
+<script type="text/javascript" src="/assets/toastr/toastr.min.js"></script>
+<script type="text/javascript" src="/assets/js/postcode.v2.js"></script>
+
+        <link rel="stylesheet" media="all" href="/assets/css/plugins.css">
+<link rel="stylesheet" media="all" href="/assets/css/style.css">
+<link rel="stylesheet" media="all" href="/assets/css/theme.css">
+<link rel="stylesheet" media="all" href="/assets/css/custom.css">
+
+        <link rel="stylesheet" media="screen" href="/assets/sweetalert2-7.26.12-dist/sweetalert2.min.css">
+<link rel="stylesheet" media="screen" href="/assets/toastr/toastr.min.css" />
+<link rel="stylesheet" media="screen" href="/assets/css/viewport.css">
+<link rel="stylesheet" media="screen" href="/assets/vue-color/vue-color.css" >
+<link rel="stylesheet" media="screen" href="/assets/vue-loading-overlay/vue-loading.css">
+<link rel="stylesheet" media="screen" href="/assets/css/vue-select-image.css">
+<link rel="stylesheet" media="screen" href="/assets/modal/modal.css">
+<link rel="stylesheet" media="screen" href="/assets/load-image/cropper.css">
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/kattergil/NotoSerifKR-Web/5e08423b/stylesheet/NotoSerif-Web.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanssc.css">
+
+    </head>
+    <body oncontextmenu="return false;" onload="onload()">
+        <div class="body-inner">
+        
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+<header id="header" data-transparent="true">
+    <div class="header-inner">
+        <div class="container">
+                <!--Logo-->
+            <div id="logo">
+                <a href="https://harubook.com">
+                    <img alt="DOY Logo" class="logo-default" src="/assets/images/logo/doy_logo_black_384x270.png">
+                    <img alt="DOY dark logo" class="logo-dark" src="/assets/images/logo/doy_logo_black.png">
+                </a>
+            </div>
+                <!--End: Logo-->
+            
+                <!--Header Extras-->
+            <div class="header-extras">
+                <ul>
+                    <li>
+                        <div class="p-dropdown">
+                            <a href="#"><i class="icon-globe"></i>
+                                <span>EN</span></a>
+                            <ul class="p-dropdown-content">
+                                <li><a href="/changelanguage?language=ko">한국어</a></li>
+                                <li><a href="/changelanguage?language=en">English</a></li>
+                                <li><a href="/changelanguage?language=cn">中文</a></li>
+                                <li><a href="/changelanguage?language=ja">日本語</a></li>
+                                <li><a href="/changelanguage?language=de">Deutsch</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+                <!--end: Header Extras-->
+            
+
+                <!--Header Extras-->
+            <div class="header-extras p-l-20">
+                <ul>
+                    <li>
+                        <div class="topbar-dropdown">
+                        
+                        </div>
+                    </li>
+                </ul>
+            </div>
+                <!--end: Header Extras-->
+
+                <!--Navigation Resposnive Trigger-->
+            <div id="mainMenu-trigger">
+                <button class="lines-button x"> <span class="lines"></span> </button>
+            </div>
+                <!--end: Navigation Resposnive Trigger-->
+
+                <!--Navigation-->
+            <div id="mainMenu" class="light">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            
+
+    <li class="dropdown"><a href="#" class="text-sans-bold">하루북</a>
+        <ul class="dropdown-menu">
+            
+                                
+<li><a href="/about" class="text-sans-bold">하루북 소개</a></li>
+
+                                
+<li><a href="/recruit" class="text-sans-bold">채용</a></li>
+
+                            
+        </ul>
+    </li>
+
+                            
+
+    <li class="dropdown"><a href="#" class="text-sans-bold">사용자 지원</a>
+        <ul class="dropdown-menu">
+            
+                                
+<li><a href="/howtouse" class="text-sans-bold">안내서</a></li>
+
+                                
+<li><a href="/easyestimate" class="text-sans-bold">간편견적</a></li>
+
+                                
+<li><a href="/faq?language=ko" class="text-sans-bold">자주하는 질문/답변</a></li>
+
+                                
+<li><a href="/qna" class="text-sans-bold">질문/답변</a></li>
+
+                                
+<li><a href="/informs" class="text-sans-bold">공지사항</a></li>
+
+                            
+        </ul>
+    </li>
+
+                            
+
+    <li class="dropdown"><a href="#" class="text-sans-bold">단체</a>
+        <ul class="dropdown-menu">
+            
+                                
+                                
+<li><a href="/orgs" class="text-sans-bold">교육기관 등록</a></li>
+
+                            
+        </ul>
+    </li>
+
+                            
+
+    <li class="dropdown"><a href="#" class="text-sans-bold">독립출판</a>
+        <ul class="dropdown-menu">
+            
+                                <li><a href="/daybooks" class="text-sans-bold">오늘의 책</a></li>
+                                
+<li><a href="/store" class="text-sans-bold">책방</a></li>
+
+
+
+
+                            
+        </ul>
+    </li>
+
+                            
+
+    <li class="dropdown"><a href="#" class="text-sans-bold">커뮤니티</a>
+        <ul class="dropdown-menu">
+            
+                                
+                                
+<li><a href="/librarys" class="text-sans-bold">도서관</a></li>
+
+                                
+<li><a href="/testimonial" class="text-sans-bold">제작후기</a></li>
+
+                                
+<li><a href="/events" class="text-sans-bold">이벤트</a></li>
+
+                            
+        </ul>
+    </li>
+
+                            
+                                <li><a href="/signin" class="text-sans-bold">로그인</a></li>
+                                <li><a href="/signup/sns" class="text-sans-bold">회원가입</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+                <!--End: Navigation-->
+        </div>
+    </div>
+</header>
+    <!-- end: Header -->
+
+        
+    
+
+<!-- Page title -->
+<section id="page-title" class="page-title-left p-t-140 p-b-25 background-light border-bottom-0 d-none d-sm-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="/">Home</a> </li>
+                            
+        <li><a href="">사용자 지원</a></li>
+    
+                        </ul>
+                    </div>
+                
+                <div class="page-title" style="width: 100%;">
+                    <h1 class="text-sans">간편견적</h1>
+                    <span class="text-sans-light">여러개 상품이 포함된 상세 견적서는 로그인후 작성이 가능합니다.</span>
+                </div>
+            </div>
+            <div class="col-lg-4 text-end">
+            
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end: Page title -->
+
+
+
+
+    
+<!-- Content -->
+<section class="p-t-25">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                
+        <div id="estimateItemApp">
+        <form action="/easyestimate" method="POST" class="form-vertical" role="form" id="estimateitem">
+	
+            <div class="row">
+                <div v-for="item in itemPreviews">
+                    <div class="offset-lg-5 col-lg-2 text-center m-b-20" v-show="item.name==selectedItem" style="min-height:160px;">
+                        <img v-bind:src="item.thumbnail" :id="item.name">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                
+	<div class="form-group " >
+		
+	
+		<label>상품</label>
+	
+	
+			
+	<p class="form-control-static">
+                    <select id="productCode" name="productCode" v-model="productCode"
+                    v-on:change="onChangeProduct()" class="form-select custom-select">
+                    
+                        <option value="DOY20">책(20P)</option>
+                    
+                        <option value="DOY32">책(32P)</option>
+                    
+                        <option value="DOY48">책(48P)</option>
+                    
+                        <option value="DOY64">책(64P)</option>
+                    
+                        <option value="DOY86">책(86P)</option>
+                    
+                        <option value="DOY108">책(108P)</option>
+                    
+                        <option value="DOY128">책(128P)</option>
+                    
+                        <option value="DOY152">책(152P)</option>
+                    
+                        <option value="DOY176">책(176P)</option>
+                    
+                        <option value="DOY196">책(196P)</option>
+                    
+                        <option value="DOY212">책(212P)</option>
+                    
+                        <option value="DOY236">책(236P)</option>
+                    
+                        <option value="DOY256">책(256P)</option>
+                    
+                        <option value="DOY272">책(272P)</option>
+                    
+                        <option value="DOY296">책(296P)</option>
+                    
+                        <option value="DOY320">책(320P)</option>
+                    
+                        <option value="DOY344">책(344P)</option>
+                    
+                        <option value="DOY365">책(366P)</option>
+                    
+                        <option value="POSTCARD">엽서</option>
+                    
+                        <option value="WALLCALENDAR">벽걸이 달력</option>
+                    
+                        <option value="DESKCALENDAR">탁상 달력</option>
+                    
+                    </select>
+                </p>
+
+			
+		
+
+	</div>
+
+                </div>
+                <div class="col-lg-2" v-if="goods == false">
+                <div class="form-group   " id="extraPage_field">
+	
+	
+		<label for="extraPage">추가 페이지</label>
+	
+	
+		
+	
+    <input type="number" id="extraPage" name="extraPage" value="0" v-on:change="onChangeExtraPage()" min="0" placeholder="추가 페이지" max="50" v-bind:disabled="goods == true" class="form-control" required="true" step="2" v-model="extraPage">
+	
+
+		
+		
+	
+
+</div>
+                </div>
+                <div class="col-lg-4" v-if="goods == false">
+                
+
+	<div class="form-group   " id="bookSize_field">
+	
+	
+		<label for="bookSize">판형(크기)</label>
+	
+	
+		
+		
+			
+				
+	 
+					<select id="bookSize" name="bookSize" v-on:change="onChangeSize()" v-model="bookSize" class="custom-select form-select p-t-5">
+						
+						
+	
+		<option value="B5" >B5 (18.2x25.7cm)</option>
+	
+		<option value="B6" >B6 (12.7x18.0cm)</option>
+	
+		<option value="A5" selected >A5 (14.8x21.0cm)</option>
+	
+
+					</select>
+				 
+
+			
+		
+	
+		
+		
+	
+
+</div>
+
+
+
+                </div>
+                <div class="col-lg-3" v-if="postcard == true">
+                
+
+	<div class="form-group   " id="bookSize_field">
+	
+	
+		<label for="bookSize">판형(크기)</label>
+	
+	
+		
+		
+			
+				
+	 
+					<select id="bookSize" name="bookSize" class="custom-select form-select p-t-5">
+						
+						
+	
+		<option value="POSTCARD" >엽서 (10.5x14.8cm)</option>
+	
+
+					</select>
+				 
+
+			
+		
+	
+		
+		
+	
+
+</div>
+
+
+
+                </div>
+                <div class="col-lg-3" v-if="deskCalendar == true">
+                
+
+	<div class="form-group   " id="bookSize_field">
+	
+	
+		<label for="bookSize">판형(크기)</label>
+	
+	
+		
+		
+			
+				
+	 
+					<select id="bookSize" name="bookSize" class="custom-select form-select p-t-5">
+						
+						
+	
+		<option value="DESKCALENDAR" >탁상달력 (15x21cm)</option>
+	
+
+					</select>
+				 
+
+			
+		
+	
+		
+		
+	
+
+</div>
+
+
+
+                </div>
+                <div class="col-lg-3" v-if="goods == false">
+                
+
+	<div class="form-group   " id="bookBinding_field">
+	
+	
+		<label for="bookBinding">제본</label>
+	
+	
+		
+		
+			
+				
+	 
+					<select id="bookBinding" name="bookBinding" v-on:change="onChangeBinding()" v-model="binding" class="custom-select form-select p-t-5">
+						
+						
+	
+		<option value="BURST_BINDING_VERT" >무선제본 세로형 (본드접착)</option>
+	
+		<option value="SADDLE_STITCH_BINDING_VERT" >중철제본 세로형 (철심고정)</option>
+	
+		<option value="HARD_COVER_VERT" selected >하드커버 세로형 (본드접착)</option>
+	
+
+					</select>
+				 
+
+			
+		
+	
+		
+		
+	
+
+</div>
+
+
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                
+
+	<div class="form-group   " id="color_field">
+	
+	
+	
+		
+		
+			<div class="custom-control custom-checkbox">
+				
+					
+	<input type="checkbox" id="color" name="color" value="true" class="custom-control-input form-check-input p-t-5" v-bind:disabled="goods == true">
+	
+		<label class="custom-control-label" for="color">
+			컬러
+		</label>
+	
+
+				
+				
+			</div>
+		
+	
+		
+		
+	
+
+</div>
+
+                </div>
+                <div class="col-lg-2" v-if="goods == false">
+                
+
+	<div class="form-group   " id="wing_field">
+	
+	
+	
+		
+		
+			<div class="custom-control custom-checkbox">
+				
+					
+	<input type="checkbox" id="wing" name="wing" value="true" class="custom-control-input form-check-input p-t-5" v-on:change="onChangeWing()" v-model="isWing" v-bind:disabled="isRound || binding==&#x27;SADDLE_STITCH_BINDING_VERT&#x27; || binding==&#x27;HARD_COVER_VERT&#x27;">
+	
+		<label class="custom-control-label" for="wing">
+			표지 날개
+		</label>
+	
+
+				
+				
+			</div>
+		
+	
+		
+		
+	
+
+</div>
+
+                </div>
+                <div class="col-lg-2">
+                
+
+	<div class="form-group   " id="round_field">
+	
+	
+	
+		
+		
+			<div class="custom-control custom-checkbox">
+				
+					
+	<input type="checkbox" id="round" name="round" value="true" class="custom-control-input form-check-input p-t-5" v-on:change="onChangeRound()" v-model="isRound" v-bind:disabled="isWing || binding == &#x27;HARD_COVER_VERT&#x27; || deskCalendar">
+	
+		<label class="custom-control-label" for="round">
+			모서리 둥글게
+		</label>
+	
+
+				
+				
+			</div>
+		
+	
+		
+		
+	
+
+</div>
+
+                </div>
+                <div class="col-lg-2">
+                <div class="form-group   " id="kind_field">
+	
+	
+		<label for="kind">종수</label>
+	
+	
+		
+	
+    <input type="number" id="kind" name="kind" value="1" class="form-control" placeholder="종수" required="true">
+	
+
+		
+		
+	
+
+</div>
+                </div>
+                <div class="col-lg-2">
+                <div class="form-group   " id="quantity_field">
+	
+	
+		<label for="quantity">부수</label>
+	
+	
+		
+	
+    <input type="number" id="quantity" name="quantity" value="10" class="form-control" placeholder="부수" required="true">
+	
+
+		
+		
+	
+
+</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                
+
+	<div class="form-group   " id="printQuality_field">
+	
+	
+		<label for="printQuality">품질</label>
+	
+	
+		
+		
+			
+				
+	 
+					<select id="printQuality" name="printQuality" class="custom-select form-select p-t-5">
+						
+						
+	
+		<option value="GENERAL" selected >일반(글,그림)</option>
+	
+		<option value="ADVANCED" >고급(사진)</option>
+	
+
+					</select>
+				 
+
+			
+		
+	
+		
+		
+	
+
+</div>
+
+
+
+                </div>
+                <div class="col-lg-3" v-if="goods == false">
+                
+
+	<div class="form-group   " id="paper_field">
+	
+	
+		<label for="paper">종이</label>
+	
+	
+		
+		
+			
+				
+	 
+					<select id="paper" name="paper" class="custom-select form-select p-t-5">
+						
+						
+	
+		<option value="MONTBLANCEX" >고급 - 몽블랑 엑스트라 화이트(백색)</option>
+	
+		<option value="ART" >고급 - 아트지</option>
+	
+		<option value="RENDEZVOUSUW" >고급 - 랑데뷰 화이트(백색)</option>
+	
+		<option value="MOJOIVORY" >기본 - 미색모조</option>
+	
+		<option value="NEWPLUSWHITE" >기본 - 뉴플러스백색</option>
+	
+		<option value="ARTEUW" >고급 - 아르테 화이트(백색)</option>
+	
+		<option value="MOJOWHITE" selected >기본 - 백색모조</option>
+	
+
+					</select>
+				 
+
+			
+		
+	
+		
+		
+	
+
+</div>
+
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                
+
+	<div class="form-group   " id="deliveryMethod_field">
+	
+	
+		<label for="deliveryMethod">배송방법</label>
+	
+	
+		
+		
+			
+				
+	 
+					<select id="deliveryMethod" name="deliveryMethod" class="custom-select form-select p-t-5" v-on:change="onChangeDeliveryMethod()" v-model="deliveryMethod">
+						
+						
+	
+		<option value="QUICK" >퀵</option>
+	
+		<option value="PARCEL" >택배</option>
+	
+		<option value="PICKUP" selected >직접수령</option>
+	
+
+					</select>
+				 
+
+			
+		
+	
+		
+		
+	
+
+</div>
+
+
+
+                </div>
+                <div class="col-lg-2">
+                <div class="form-group   " id="zipcode_field">
+	
+	
+		<label for="zipcode">우편번호</label>
+	
+	
+		
+	
+    <input type="text" id="zipcode" name="zipcode" value="" class="form-control" readonly="" v-model="zipCode">
+	
+
+		
+		
+	
+
+</div>
+                </div>
+                <div class="col-lg-6">
+                <div class="form-group   " id="addr1_field">
+	
+	
+		<label for="addr1">주소</label>
+	
+	
+		
+	
+    <input type="text" id="addr1" name="addr1" value="" class="form-control" readonly="" v-model="addr1">
+	
+
+		
+		
+	
+
+</div>
+                </div>
+                <div class="col-lg-2 form-group has-feedback">
+                    <button type="button" id="searchAddress" class="btn btn-info" v-on:click="searchAddress()"
+                        v-bind:disabled = "deliveryMethod == 'PICKUP'"
+                        style="margin-top: 30px;">우편번호 검색</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3" v-if="photoFrame == true">
+                
+
+	<div class="form-group   " id="bookSize_field">
+	
+	
+		<label for="bookSize">판형(크기)</label>
+	
+	
+		
+		
+			
+				
+	 
+					<select id="bookSize" name="bookSize" class="custom-select form-select p-t-5">
+						
+						
+	
+		<option value="R5" >5x7인치 액자, 12.7x17.8cm</option>
+	
+
+					</select>
+				 
+
+			
+		
+	
+		
+		
+	
+
+</div>
+
+
+
+                </div>
+                <div class="col-lg-3" v-if="photoFrame == true">
+                
+
+	<div class="form-group   " id="photoFramePart_field">
+	
+	
+		<label for="photoFramePart">액자부속</label>
+	
+	
+		
+		
+			
+				
+	 
+					<select id="photoFramePart" name="photoFramePart" class="custom-select p-t-5">
+						
+						
+	
+		<option value="HANGER" >벽걸이</option>
+	
+		<option value="NONE" >없음</option>
+	
+		<option value="STAND" >받침대</option>
+	
+
+					</select>
+				 
+
+			
+		
+	
+		
+		
+	
+
+</div>
+
+
+
+                </div>
+                <div class="col-lg-3" v-if="photoFrame == true">
+                
+
+	<div class="form-group   " id="photoFrameType_field">
+	
+	
+		<label for="photoFrameType">액자유형</label>
+	
+	
+		
+		
+			
+				
+	 
+					<select id="photoFrameType" name="photoFrameType" class="custom-select form-select p-t-5">
+						
+						
+	
+		<option value="CANVAS" >캔버스</option>
+	
+		<option value="SUREVIEW" >슈어뷰</option>
+	
+
+					</select>
+				 
+
+			
+		
+	
+		
+		
+	
+
+</div>
+
+
+
+                </div>
+            </div>
+
+            <div class="line m-t-10 m-b-10"></div>
+            <div class="row">
+                <div class="col-lg-8">
+                    
+                        <span class="badge badge-danger">-40.0%</span>
+                    
+                    <h3>합계: <b>280,000원</b></h3>
+
+                        <h4>(권당 28,000원
+                            ,할인율: 40.0%
+                            ,배송비: 0원)</h4>
+                </div>
+                <div class="col-lg-4 text-end">
+                
+<button type="submit" class="btn btn-dark"><i class="fa fa-check"></i>&nbsp;확인</button>
+                </div>
+            </div>
+
+            <div class="line">
+            <h3>견적항목 가이드</h3>
+            <div class="row">
+    <div class="col-lg-12 p-l-40">
+        <h4 class="p-t-40"><small><i class="fa fa-info-circle"></i></small> 종수,부수,상품</h4>
+        <ul>
+            <li>1인 1책이면 종수가 1, 부수가 1입니다. 예) 10명이 각자 자기 책을 쓰는경우 종수가 10, 부수가 1</li>
+            <li>1종의 책을 10부 제작하면 종수가 1, 부수가 10입니다. 예) 4명이 같은 책을 함께 쓰는 경우 종수가 1, 부수가 4</li>
+            <li>초등학생은 32페이지, 중학생은 48페이지나 64페이지가 적당합니다.</li>
+            <div class="row">
+                <div class="col-lg-11">
+                    <img src="/assets/images/estimate/bookoverview.jpg" class="img-thumbnail">
+                </div>
+            </div>
+        </ul>
+
+        <h4 class="p-t-15"><small><i class="fa fa-info-circle"></i></small> 판형</h4>
+        <ul>
+            <li>B6는 시집, A5는 소설책, B5는 홍보물 크기로 생각하시면 됩니다.</li>
+            <div class="row">
+                <div class="col-lg-11">
+                    <img src="/assets/images/estimate/booksize.jpg" class="img-thumbnail p-10">
+                </div>
+            </div>
+        </ul>
+
+        <h4 class="p-t-15"><small><i class="fa fa-info-circle"></i></small> 제본</h4>
+        <ul>
+            <li>중철제본은 스테이플러로 고정하는 방식이라 브로셔 느낌, 책 다운 형태를 원한다면 무선제본을 추천합니다.</li>
+            <div class="row">
+                <div class="col-lg-11">
+                    <img src="/assets/images/estimate/binding.jpg" class="img-thumbnail">
+                </div>
+            </div>
+        </ul>
+
+        <h4 class="p-t-15"><small><i class="fa fa-info-circle"></i></small> 종이</h4>
+        <ul>
+            <li>선호하는 고급종이가 없다면 백색모조지가 가격도 합리적이고 품질도 우수합니다.</li>
+            <li>사진이 많다면 아트지나 몽블랑지를 추천합니다.<br>
+                - <a href="https://blog.harubook.com/24" target="_blank">종이재질 가이드</a>
+            </li>
+            <div class="row">
+                <div class="col-lg-11">
+                    <img src="/assets/images/estimate/paper.jpg" class="img-thumbnail">
+                </div>
+            </div>
+        </ul>
+
+        <h4 class="p-t-15"><small><i class="fa fa-info-circle"></i></small> 책 표지</h4>
+        <ul>
+            <li>표지는 코팅이 기본이며 유광/무광 코팅 가격은 동일합니다.</li>
+
+            <div class="row">
+                <div class="col-lg-11">
+                    <img src="/assets/images/estimate/coating.jpg" class="img-thumbnail p-10">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-11">
+                    <img src="/assets/images/estimate/pageoption.jpg" class="img-thumbnail">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-11">
+                    <img src="/assets/images/estimate/color.jpg" class="img-thumbnail p-10">
+                </div>
+            </div>
+        </ul>
+    </div>
+</div>
+        
+</form>
+        </div>
+    
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content end -->
+
+
+    <script type="text/javascript">
+        let estimateApp = new Vue({
+            el: '#estimateItemApp',
+            data:{
+                deliveryMethod: 'PICKUP',
+                totalPageNumber: 128,
+                productCode: 'DOY128',
+                goods: false,
+                photoFrame: false,
+                postcard: false,
+                deskCalendar: false,
+                binding: 'HARD_COVER_VERT',
+                isWing: false,
+                isRound: false,
+                bookSize: 'A5',
+                checkAddress: false,
+                zipCode: '',
+                addr1: '',
+                selectedItem: null,
+                productMap:new Map(),
+                selectedProduct:null,
+                extraPage: 0,
+                itemPreviews: [{
+                    name: 'BURST_WING',
+                    binding: 'BURST_BINDING_VERT',
+                    thumbnail: '/assets/images/printconfig/cover/burst_wing_book.png',
+                    wing: true,
+                    round: false
+                },{
+                    name: 'BURST_ROUNDED',
+                    binding: 'BURST_BINDING_VERT',
+                    thumbnail: '/assets/images/printconfig/cover/burst_rounded_book.png',
+                    wing: false,
+                    round: true
+                },{
+                    name: 'BURST',
+                    binding: 'BURST_BINDING_VERT',
+                    thumbnail: '/assets/images/printconfig/cover/burst_book.png',
+                    wing: false,
+                    round: false
+                },{
+                    name: 'SADDLE_ROUNDED',
+                    binding: 'SADDLE_STITCH_BINDING_VERT',
+                    thumbnail: '/assets/images/printconfig/cover/saddle_stitch_rounded_book.png',
+                    wing: false,
+                    round: true
+                },{
+                    name: 'SADDLE',
+                    binding: 'SADDLE_STITCH_BINDING_VERT',
+                    thumbnail: '/assets/images/printconfig/cover/saddle_stitch_book.png',
+                    wing: false,
+                    round: false
+                },{
+                    name: 'HARD_COVER',
+                    binding: 'HARD_COVER_VERT',
+                    thumbnail: '/assets/images/printconfig/cover/hard_cover_book.png',
+                    wing: false,
+                    round: false
+                }]
+            },
+            methods:{
+                searchAddress: function(){
+                    let vm = this;
+                    new daum.Postcode({
+                        oncomplete: function(data) {
+                            vm.zipCode = data.zonecode;
+                            vm.addr1 = data.address + ' (' + data.buildingName + ')';
+                            vm.checkAddress = true;
+                        }
+                    }).open();
+                },
+                onChangeExtraPage: function(){
+                    if((this.extraPage%2)!=0){
+                        toastr.info("2페이지 단위로 페이지를 추가할 수 있습니다.");
+                        this.extraPage++;
+                        return;
+                    }
+                    if(this.selectedProduct.maxPage<this.extraPage){
+                        toastr.info(this.selectedProduct.name +"의 최대 추가 가능한 페이지는 "+this.selectedProduct.maxPage+"페이지 입니다.");
+                        this.extraPage = this.selectedProduct.maxPage;
+                        return;
+                    }
+                },
+                onChangeSize: function(){
+                    let previewItem = document.getElementById(this.selectedItem);
+                    if(previewItem!=null){
+                        switch (this.bookSize){
+                            case 'B6':
+                                previewItem.style.width = '150px';
+                                previewItem.style.height = 'auto';
+                                break;
+                            case 'A5':
+                                previewItem.style.width = '175px';
+                                previewItem.style.height = 'auto';
+                                break;
+                            case 'B5':
+                                previewItem.style.width = '216px';
+                                previewItem.style.height = 'auto';
+                                break;
+                        }
+                    }
+
+                },
+                onChangeBinding: function(){
+                    switch (this.binding){
+                        case 'NO_BINDING':
+                            this.isWing = false;
+                            this.goods = true;
+                            break;
+                        case 'BURST_BINDING_VERT':
+                            if(this.isRound){
+                                this.selectedItem = 'BURST_ROUNDED';
+                                this.isWing = false;
+                            }else{
+                                this.selectedItem = 'BURST';
+                            }
+                            break;
+                        case 'SADDLE_STITCH_BINDING_VERT':
+                            this.isWing = false;
+                            if(this.isRound){
+                                this.selectedItem = 'SADDLE_ROUNDED';
+                            }else{
+                                this.selectedItem = 'SADDLE';
+                            }
+                            break;
+                        case 'HARD_COVER_VERT':
+                            this.isWing = false;
+                            this.isRound = false;
+                            this.selectedItem = 'HARD_COVER';
+                            break;
+                    }
+                    this.onChangeSize();
+                },
+                onChangeDeliveryMethod: function(){
+                    if(this.deliveryMethod == 'PICKUP'){
+                        this.zipCode = '';
+                        this.addr1 = '';
+                        this.checkAddress = false;
+                    }
+                },
+                onChangeWing: function(){
+                    if(this.isWing)     this.isRound = false;
+                    if(this.isWing){
+                        this.selectedItem = 'BURST_WING';
+                    }else{
+                        this.selectedItem = 'BURST';
+                    }
+                    this.onChangeSize();
+                },
+                onChangeRound: function(){
+                    this.onChangeBinding();
+                    this.onChangeSize();
+                },
+                onChangeProduct: function (){
+                    this.selectedProduct = this.productMap.get(this.productCode);
+
+                    this.photoFrame = false;
+                    this.postcard = false;
+                    this.deskCalendar = false;
+                    this.goods = false;
+
+                    if(this.productCode == 'PHOTOFRAME'){
+                        this.photoFrame = true;
+                        this.goods = true;
+                    }
+                    if(this.productCode == 'POSTCARD'){
+                        this.postcard = true;
+                        this.goods = true;
+                        this.isWing = false;
+                    }
+                    if(this.productCode == 'DESKCALENDAR'){
+                        this.deskCalendar = true;
+                        this.goods = true;
+                        this.isRound = false;
+                    }
+                },
+                loadProduct(){
+                    this.selectedProduct = this.productMap.get(this.productCode);
+                },
+                loadProductMap: function(){
+                    axios
+                        .get('/api/products')
+                        .then(function (response) {
+                            for(let i=0;i<response.data.length;i++){
+                                let obj = response.data[i];
+                                estimateApp.productMap.set(obj.code,obj);
+                            }
+                            estimateApp.loadProduct();
+                            estimateApp.onChangeProduct();
+                        })
+                }
+            },
+            created: function () {
+                this.loadProductMap();
+                this.onChangeBinding();
+            },
+            mounted: function(){
+                this.onChangeSize();
+            }
+        });
+    </script>
+
+        <!--Modal Modal on load with data-delay -->
+
+
+<!--End: Modal on load with data-delay -->
+        <!-- Footer -->
+<footer id="footer" class="footer-light footer-sticky">
+    <div class="copyright-content">
+        <div class="container">
+            <div class="copyright-text text-center">&copy; 2026 Harubook. All Rights Reserved <a href="https://espressobook.com" target="_blank">espressobook</a>.
+            </div>
+        </div>
+    </div>
+</footer>
+
+        <script type="text/javascript">
+   /*
+    comp.deletemsgbtn call back function
+    */
+    function isDelete(action) {
+        swal({
+            title: '삭제하시겠습니까?',
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: '예',
+            cancelButtonText: '아니오'
+        }).then((result) => {
+            if(result.value){
+                console.log(result.value);
+                location.href = action;
+            }
+        })
+    }
+
+   function signOut() {
+       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+       const firebaseConfig = {
+           apiKey: "AIzaSyApU1Gfvb2-cm_i29fFmfr_cQjA-rijBBg",
+           authDomain: "api-project-233291168959.firebaseapp.com",
+           // authDomain: "auth.harubook.com",
+           databaseURL: "https://api-project-233291168959.firebaseio.com",
+           projectId: "api-project-233291168959",
+           storageBucket: "api-project-233291168959.appspot.com",
+           messagingSenderId: "233291168959",
+           appId: "1:233291168959:web:d0842f246e84fbeacfda0a",
+           measurementId: "G-QCBGCN19VM"
+       };
+       firebase.initializeApp(firebaseConfig);
+       firebase.auth().signOut().then(function() {
+           // Sign-out successful.
+           location.href = "/signout";
+       }).catch(function(error) {
+           // An error happened.
+           console.log(error);
+       });
+   }
+</script>
+    </div>
+    <!-- end: Wrapper -->
+
+        </div>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"75cc452806a64b31bbb81bad0b574c2c","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
+

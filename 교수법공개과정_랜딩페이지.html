@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>주력 강의 재설계 과정 | 2026년 5월 1일-2일</title>
+  <meta
+    name="description"
+    content="현업 강사가 자신의 주력 강의 1개를 기준으로 교수설계, 학습자 촉진, 전달기법을 재구성하는 2일 공개과정입니다."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="주력 강의 재설계 과정" />
+  <meta
+    property="og:description"
+    content="자신의 강의를 한 단계 업그레이드하고 싶은 강사를 위한 2일 공개과정"
+  />
+  <meta property="og:image" content="교수법공개과정_랜딩페이지_공유이미지.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0f2d68" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            ink: '#0f172a',
+            paper: '#f6f1e8',
+            sand: '#e8decf',
+            cobalt: '#0f2d68',
+            sky: '#4a7dff',
+            brass: '#b78c45',
+            night: '#08111f'
+          },
+          boxShadow: {
+            plane: '0 24px 80px rgba(15, 45, 104, 0.16)'
+          },
+          fontFamily: {
+            sans: ['Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif'],
+            display: ['Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif'],
+            mono: ['Consolas', 'SFMono-Regular', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    :root { color-scheme: light; }
+    html.dark { color-scheme: dark; }
+    body {
+      font-family: Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(74, 125, 255, 0.16), transparent 30%),
+        linear-gradient(180deg, #f6f1e8 0%, #f7f6f1 44%, #ffffff 100%);
+    }
+    html.dark body {
+      background:
+        radial-gradient(circle at top left, rgba(74, 125, 255, 0.14), transparent 32%),
+        linear-gradient(180deg, #08111f 0%, #0b1427 46%, #101827 100%);
+    }
+    .grid-paper::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(15, 45, 104, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15, 45, 104, 0.08) 1px, transparent 1px);
+      background-size: 36px 36px;
+      mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.65), transparent 88%);
+      pointer-events: none;
+    }
+    html.dark .grid-paper::before {
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    }
+    .grain::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.25;
+      mix-blend-mode: multiply;
+      background-image:
+        radial-gradient(circle at 20% 20%, rgba(183, 140, 69, 0.16) 0 2px, transparent 2px),
+        radial-gradient(circle at 78% 36%, rgba(15, 45, 104, 0.18) 0 2px, transparent 2px),
+        radial-gradient(circle at 64% 78%, rgba(183, 140, 69, 0.16) 0 2px, transparent 2px);
+      background-size: 140px 140px;
+      pointer-events: none;
+    }
+    html.dark .grain::after { opacity: 0.12; mix-blend-mode: screen; }
+    .hero-line {
+      width: clamp(120px, 18vw, 220px);
+      height: 1px;
+      background: linear-gradient(90deg, rgba(74, 125, 255, 0.16), rgba(15, 45, 104, 0.78), rgba(74, 125, 255, 0.12));
+    }
+    .hero-stage {
+      min-height: calc(100svh - 73px);
+    }
+    .balance { text-wrap: balance; }
+    .pretty { text-wrap: pretty; }
+    .ko-keep { word-break: keep-all; }
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    .reveal.in-view { opacity: 1; transform: none; }
+    .drift { animation: drift 9s ease-in-out infinite; }
+    .pulse-ring { animation: pulseRing 8s ease-in-out infinite; transform-origin: center; }
+    .frame-grid::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(15, 45, 104, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15, 45, 104, 0.08) 1px, transparent 1px);
+      background-size: 28px 28px;
+      opacity: 0.42;
+      pointer-events: none;
+    }
+    .frame-grid-dark::before {
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    }
+    @keyframes drift {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes pulseRing {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.04); opacity: 0.92; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .drift, .pulse-ring { animation: none; }
+    }
+    @media (min-width: 1024px) {
+      .hero-stage {
+        height: calc(100svh - 73px);
+        min-height: 780px;
+        max-height: 920px;
+      }
+    }
+  </style>
+</head>
+<body class="text-ink dark:text-slate-100">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-cobalt focus:px-4 focus:py-2 focus:text-sm focus:text-white">
+    본문으로 바로가기
+  </a>
+
+  <header class="sticky top-0 z-40 border-b border-slate-900/10 bg-white/80 backdrop-blur-xl dark:border-white/10 dark:bg-night/75">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
+      <a href="#top" class="flex items-center gap-3 text-sm font-semibold tracking-[0.08em] text-cobalt dark:text-slate-100">
+        <span class="inline-block h-2.5 w-2.5 rounded-full bg-sky"></span>
+        <span>주력 강의 재설계 과정</span>
+      </a>
+      <nav class="hidden items-center gap-7 text-sm text-slate-700 dark:text-slate-300 lg:flex">
+        <a href="#overview" class="transition hover:text-cobalt dark:hover:text-white">과정 개요</a>
+        <a href="#axes" class="transition hover:text-cobalt dark:hover:text-white">배우는 내용</a>
+        <a href="#instructor" class="transition hover:text-cobalt dark:hover:text-white">강사 소개</a>
+        <a href="#flow" class="transition hover:text-cobalt dark:hover:text-white">2일 구성</a>
+        <a href="#results" class="transition hover:text-cobalt dark:hover:text-white">결과물</a>
+        <a href="#register" class="transition hover:text-cobalt dark:hover:text-white">신청 안내</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScaahS-ihUZisA6IBUVKAzrQgRic4pA5SZdUAyvx5PwVixyow/viewform" target="_blank" rel="noreferrer" class="rounded-full bg-cobalt px-4 py-2 text-sm font-semibold text-white transition hover:bg-sky">
+          신청서 작성
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="relative overflow-hidden border-b border-slate-900/10 dark:border-white/10">
+      <div class="grid-paper grain absolute inset-0"></div>
+      <div class="hero-stage mx-auto grid max-w-7xl gap-8 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-[minmax(0,1.05fr)_minmax(420px,0.95fr)] lg:px-10 lg:py-[4.5rem]">
+        <div class="relative z-10 flex max-w-2xl flex-col justify-center">
+          <div class="reveal flex items-center gap-4">
+            <span class="rounded-full border border-cobalt/15 bg-white/70 px-4 py-2 text-xs font-semibold tracking-[0.22em] text-cobalt dark:border-white/10 dark:bg-white/5 dark:text-slate-200">
+              2026.05.01 FRI - 05.02 SAT
+            </span>
+            <div class="hero-line"></div>
+          </div>
+
+          <div class="mt-7 space-y-6">
+            <div class="reveal">
+              <p class="ko-keep font-mono text-xs uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">자신의 강의를 한 단계 업그레이드하고 싶은 강사를 위한 2일 공개과정</p>
+              <h1 class="balance ko-keep mt-4 max-w-4xl font-display text-[clamp(2.7rem,5.2vw,4.85rem)] font-semibold leading-[0.98] tracking-[-0.045em] text-cobalt dark:text-white">
+                주력 강의
+                <span class="block text-ink dark:text-slate-100">재설계 과정</span>
+              </h1>
+              <p class="mt-5 flex flex-wrap gap-2 text-sm font-semibold text-cobalt dark:text-slate-200">
+                <span class="rounded-full border border-cobalt/15 bg-white/70 px-3 py-1.5 dark:border-white/10 dark:bg-white/5">교수설계</span>
+                <span class="rounded-full border border-cobalt/15 bg-white/70 px-3 py-1.5 dark:border-white/10 dark:bg-white/5">학습자 촉진</span>
+                <span class="rounded-full border border-cobalt/15 bg-white/70 px-3 py-1.5 dark:border-white/10 dark:bg-white/5">전달기법</span>
+              </p>
+            </div>
+
+            <div class="reveal max-w-xl">
+              <p class="pretty ko-keep text-[17px] leading-8 text-slate-700 dark:text-slate-300">
+                이 과정은 강의 일반론을 설명하는 과정이 아닙니다. 현재 운영 중인 주력 강의 1개를 기준으로
+                <strong class="font-semibold text-ink dark:text-white">교수설계, 학습자 촉진, 전달기법을 재구성하고 수정안을 도출하는</strong>
+                2일 공개과정입니다.
+              </p>
+            </div>
+
+            <div class="reveal grid max-w-2xl gap-4 sm:grid-cols-3">
+              <div class="border-t border-cobalt/20 pt-4 dark:border-white/10">
+                <p class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">대상</p>
+                <p class="mt-2 text-base font-semibold text-ink dark:text-white">현업 강사</p>
+                <p class="mt-1 text-sm leading-6 text-slate-600 dark:text-slate-400">기업교육 강사, 퍼실리테이터, 사내강사, HRD 담당자</p>
+              </div>
+              <div class="border-t border-cobalt/20 pt-4 dark:border-white/10">
+                <p class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">결과물</p>
+                <p class="mt-2 text-base font-semibold text-ink dark:text-white">주력 강의 개선안</p>
+                <p class="mt-1 text-sm leading-6 text-slate-600 dark:text-slate-400">핵심 메시지, 구조, 질문, 활동, 전달 기준 정리</p>
+              </div>
+              <div class="border-t border-cobalt/20 pt-4 dark:border-white/10">
+                <p class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">참가비</p>
+                <p class="mt-2 text-base font-semibold text-ink dark:text-white">110만원</p>
+                <p class="mt-1 text-sm leading-6 text-slate-600 dark:text-slate-400">부가세 포함, 교재·식사·음료 및 다과 제공</p>
+              </div>
+            </div>
+
+            <div class="reveal flex flex-col gap-3 pt-2 sm:flex-row">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScaahS-ihUZisA6IBUVKAzrQgRic4pA5SZdUAyvx5PwVixyow/viewform" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center rounded-full bg-cobalt px-6 py-3 text-base font-semibold text-white transition hover:bg-sky">
+                신청서 작성
+              </a>
+              <a href="#axes" class="inline-flex items-center justify-center rounded-full border border-slate-900/10 bg-white/80 px-6 py-3 text-base font-semibold text-ink transition hover:border-cobalt hover:text-cobalt dark:border-white/10 dark:bg-white/5 dark:text-slate-100 dark:hover:border-white">
+                무엇을 배우는지 보기
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative z-10 flex items-center justify-center lg:justify-end">
+          <div class="reveal drift relative w-full max-w-[520px] rounded-[32px] border border-cobalt/10 bg-white/75 p-5 shadow-plane backdrop-blur dark:border-white/10 dark:bg-white/5">
+            <div class="relative mt-8 aspect-[1/1.06] overflow-hidden rounded-[26px]">
+              <img
+                src="교육현장_메인비주얼.jpg"
+                alt="밝은 교육 공간에서 다양한 국적의 학습자와 강사가 함께 있는 장면"
+                class="h-full w-full object-cover object-[52%_center] scale-[1.03] saturate-[0.92]"
+              />
+              <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.12)_0%,rgba(15,23,42,0.08)_36%,rgba(15,23,42,0.64)_100%)]"></div>
+              <div class="absolute inset-0 ring-1 ring-inset ring-white/25"></div>
+
+              <div class="absolute inset-x-5 bottom-5">
+                <div class="rounded-[24px] border border-white/45 bg-white/95 px-5 py-4 text-ink shadow-[0_18px_48px_rgba(15,23,42,0.18)]">
+                  <p class="balance ko-keep text-[1.2rem] font-semibold leading-8 tracking-[-0.03em] text-cobalt">
+                    질문·토론·피드백 중심 2일 공개과정
+                  </p>
+                  <p class="pretty ko-keep mt-1.5 text-sm leading-6 text-slate-600">
+                    상호 강의 검토와 피드백을 중심으로 운영합니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10">
+      <div class="grid gap-12 lg:grid-cols-[0.95fr_1.05fr]">
+        <div class="reveal">
+          <p class="font-mono text-xs uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">대상</p>
+          <h2 class="balance ko-keep mt-4 max-w-xl font-display text-4xl font-semibold tracking-[-0.04em] text-ink dark:text-white sm:text-5xl">
+            이미 강의를 운영 중인 강사를 대상으로 합니다.
+          </h2>
+        </div>
+        <div class="reveal grid gap-7 text-base leading-8 text-slate-700 dark:text-slate-300 sm:grid-cols-2">
+          <div>
+            <p class="font-semibold text-cobalt dark:text-slate-100">참가 대상</p>
+            <ul class="mt-4 space-y-3">
+              <li>기업교육 강사</li>
+              <li>프리랜서 강사 및 퍼실리테이터</li>
+              <li>사내강사, HRD 담당자</li>
+              <li>주력 강의 개편이 필요한 강사</li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-semibold text-cobalt dark:text-slate-100">주요 개선 과제</p>
+            <ul class="mt-4 space-y-3">
+              <li>강의 주제는 있지만 핵심 메시지가 명확하지 않습니다.</li>
+              <li>내용은 많지만 구조 체계가 불명확합니다.</li>
+              <li>활동이 학습 목표와 직접 연결되지 않습니다.</li>
+              <li>만족도 대비 현장 적용도가 낮습니다.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="axes" class="border-y border-slate-900/10 bg-white/70 py-20 dark:border-white/10 dark:bg-white/5">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+        <div class="reveal grid gap-4 lg:grid-cols-[0.9fr_1.1fr] lg:gap-10 lg:items-end">
+          <div>
+            <h2 class="balance font-display text-4xl font-semibold tracking-[-0.04em] text-ink dark:text-white sm:text-5xl">
+              What We Learn
+            </h2>
+          </div>
+          <p class="max-w-xl text-base leading-7 text-slate-600 dark:text-slate-400 lg:max-w-none">
+            교수설계, 학습자 촉진, 전달기법을 기준으로 강의 구조와 운영 방식을 재구성합니다.
+          </p>
+        </div>
+
+        <div class="mt-14 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+          <div class="reveal">
+            <div class="overflow-hidden rounded-[30px] border border-slate-900/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.96)_0%,rgba(238,243,255,0.92)_52%,rgba(246,241,232,0.9)_100%)] p-6 shadow-plane dark:border-white/10 dark:bg-[linear-gradient(135deg,rgba(15,26,48,0.98)_0%,rgba(16,24,39,0.96)_54%,rgba(20,40,72,0.88)_100%)]">
+              <div class="relative overflow-hidden rounded-[24px] border border-cobalt/10 bg-white/72 p-4 dark:border-white/10 dark:bg-white/5">
+                <svg viewBox="0 0 620 500" class="h-full w-full" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="axisBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#9cb5ff" />
+                      <stop offset="100%" stop-color="#3164e0" />
+                    </linearGradient>
+                    <linearGradient id="axisGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#efd39c" />
+                      <stop offset="100%" stop-color="#c39747" />
+                    </linearGradient>
+                  </defs>
+
+                  <circle cx="314" cy="225" r="136" fill="none" stroke="url(#axisBlue)" stroke-width="34" stroke-dasharray="615 190 190 190" stroke-linecap="round" transform="rotate(-42 314 225)"></circle>
+                  <circle cx="314" cy="225" r="92" fill="#ffffff" opacity="0.96"></circle>
+                  <circle cx="314" cy="225" r="64" fill="#f8fafc"></circle>
+
+                  <rect x="84" y="84" width="174" height="78" rx="22" fill="#173775"></rect>
+                  <text x="171" y="132" text-anchor="middle" font-size="28" font-weight="700" fill="#ffffff" font-family="Pretendard, Malgun Gothic, sans-serif">교수설계</text>
+
+                  <rect x="376" y="62" width="174" height="78" rx="22" fill="#ffffff" opacity="0.98"></rect>
+                  <text x="463" y="110" text-anchor="middle" font-size="28" font-weight="700" fill="#0f172a" font-family="Pretendard, Malgun Gothic, sans-serif">학습자 촉진</text>
+
+                  <rect x="402" y="338" width="174" height="78" rx="22" fill="#c39747"></rect>
+                  <text x="489" y="386" text-anchor="middle" font-size="28" font-weight="700" fill="#ffffff" font-family="Pretendard, Malgun Gothic, sans-serif">전달기법</text>
+
+                  <line x1="237" y1="162" x2="272" y2="190" stroke="#173775" stroke-width="2"></line>
+                  <line x1="426" y1="140" x2="394" y2="192" stroke="#82a5ff" stroke-width="2"></line>
+                  <line x1="438" y1="338" x2="378" y2="276" stroke="#c39747" stroke-width="2"></line>
+
+                  <text x="314" y="210" text-anchor="middle" font-size="18" fill="#64748b" font-family="Pretendard, Malgun Gothic, sans-serif" letter-spacing="3">핵심 결과</text>
+                  <text x="314" y="246" text-anchor="middle" font-size="32" font-weight="700" fill="#0f172a" font-family="Pretendard, Malgun Gothic, sans-serif">주력 강의</text>
+                  <text x="314" y="282" text-anchor="middle" font-size="20" font-weight="600" fill="#173775" font-family="Pretendard, Malgun Gothic, sans-serif">개선안 완성</text>
+                </svg>
+              </div>
+              <p class="mt-5 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                세 축은 개별 기술이 아니라 강의 설계와 운영 전반에 적용되는 기준입니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid gap-6">
+          <article class="reveal border-t border-cobalt/20 pt-6 dark:border-white/10">
+            <h3 class="text-3xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">교수설계</h3>
+            <ul class="mt-6 space-y-3 text-base leading-8 text-slate-700 dark:text-slate-300">
+              <li>대상자와 적용 상황을 정의합니다.</li>
+              <li>학습 목표와 핵심 메시지를 명확하게 설정합니다.</li>
+              <li>도입, 전개, 적용, 정리 구조를 재구성합니다.</li>
+            </ul>
+          </article>
+
+          <article class="reveal border-t border-cobalt/20 pt-6 dark:border-white/10">
+            <h3 class="text-3xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">학습자 촉진</h3>
+            <ul class="mt-6 space-y-3 text-base leading-8 text-slate-700 dark:text-slate-300">
+              <li>질문, 사례, 활동의 배치 기준을 설정합니다.</li>
+              <li>참여 활동과 학습 목표의 연결 구조를 설계합니다.</li>
+              <li>피드백 반영 방식을 정리합니다.</li>
+            </ul>
+          </article>
+
+          <article class="reveal border-t border-cobalt/20 pt-6 dark:border-white/10">
+            <h3 class="text-3xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">전달기법</h3>
+            <ul class="mt-6 space-y-3 text-base leading-8 text-slate-700 dark:text-slate-300">
+              <li>설명, 전환, 강조, 마무리 방식을 점검합니다.</li>
+              <li>핵심 메시지 전달 기준을 정리합니다.</li>
+              <li>미니 시연을 통해 개선 지점을 확인합니다.</li>
+            </ul>
+          </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instructor" class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10">
+      <div class="grid gap-10 lg:grid-cols-[0.74fr_1.26fr] lg:items-start">
+        <div class="reveal">
+          <div class="max-w-[420px] overflow-hidden rounded-[30px] border border-slate-900/10 bg-white/80 shadow-plane dark:border-white/10 dark:bg-white/5">
+            <div class="aspect-[4/4.8] overflow-hidden">
+              <img
+                src="jjm2.jpg"
+                alt="전종목 강사 프로필 사진"
+                class="h-full w-full object-cover object-[52%_center]"
+              />
+            </div>
+            <div class="px-6 py-5">
+              <p class="text-2xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">전종목</p>
+              <p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                기업교육 강사 · 과정 설계자
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h2 class="balance ko-keep font-display text-4xl font-semibold tracking-[-0.04em] text-ink dark:text-white sm:text-5xl">
+            강사 소개
+          </h2>
+          <p class="pretty ko-keep mt-6 max-w-3xl text-base leading-8 text-slate-700 dark:text-slate-300">
+            전종목 강사는 15년간 삼성, SK, 현대자동차, LG, ASML, 포스코, 한화 등 주요 기업과 기관에서
+            전달력, 리더십, 조직 커뮤니케이션, AI 활용 과정을 설계·운영해 왔습니다.
+            세상을바꾸는시간15분, TEDx, JTBC 말하는 대로 스피치 코치로 활동했으며,
+            기업 현장 맞춤형 과정 설계와 강의 운영 경험을 보유하고 있습니다.
+          </p>
+
+          <div class="mt-8 grid gap-4 md:grid-cols-2">
+            <div class="rounded-[26px] border border-slate-900/10 bg-white/80 p-6 dark:border-white/10 dark:bg-white/5">
+              <p class="text-xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">15년 경력</p>
+              <div class="mt-3 space-y-3 text-sm leading-7 text-slate-600 dark:text-slate-400">
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-slate-500">분야</p>
+                  <p class="mt-1">기업교육 · 발표 코칭 · 리더 교육</p>
+                </div>
+                <div class="border-t border-slate-900/10 pt-3 dark:border-white/10">
+                  <p class="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-slate-500">대표 이력</p>
+                  <p class="mt-1">세상을바꾸는시간15분 · TEDx · JTBC 말하는 대로 스피치 코치</p>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[26px] border border-slate-900/10 bg-white/80 p-6 dark:border-white/10 dark:bg-white/5">
+              <p class="text-xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">주요 고객사</p>
+              <div class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">
+                <p>삼성, SK, 현대자동차, LG, ASML</p>
+                <p>포스코, 한화 등 주요 기업과 기관</p>
+              </div>
+            </div>
+            <div class="rounded-[26px] border border-slate-900/10 bg-white/80 p-6 dark:border-white/10 dark:bg-white/5">
+              <p class="text-xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">과정 설계 이력</p>
+              <ul class="mt-2 space-y-1 text-sm leading-7 text-slate-600 dark:text-slate-400">
+                <li>삼성전자 직무전환자 리스킬링 마인드셋 과정</li>
+                <li>ASML 리더십포럼 과정</li>
+                <li>SK하이닉스 협력사 구성원 온보딩 과정</li>
+                <li>현대자동차 리더십 스피치 과정 등 다수</li>
+              </ul>
+            </div>
+            <div class="rounded-[26px] border border-slate-900/10 bg-white/80 p-6 dark:border-white/10 dark:bg-white/5">
+              <p class="text-xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">현재 역할</p>
+              <div class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">
+                <p>기점 인사이트 대표</p>
+                <p>전환설계연구소 소장</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 rounded-[30px] border border-cobalt/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.96)_0%,rgba(238,243,255,0.92)_100%)] px-7 py-6 dark:border-white/10 dark:bg-[linear-gradient(135deg,rgba(15,26,48,0.98)_0%,rgba(16,24,39,0.96)_100%)]">
+            <p class="text-xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">이 과정과의 적합성</p>
+            <ul class="mt-4 space-y-2 text-sm leading-7 text-slate-700 dark:text-slate-300">
+              <li>과정 설계, 학습자 참여 설계, 발표 코칭을 함께 수행해 왔습니다.</li>
+              <li>기업교육 현장에서 강의 개발과 리더 교육을 직접 운영해 왔습니다.</li>
+              <li>주력 강의 진단과 수정안 도출 경험을 보유하고 있습니다.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="flow" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10">
+      <div class="grid gap-12 lg:grid-cols-[0.7fr_1.3fr]">
+        <div class="reveal">
+          <h2 class="balance ko-keep font-display text-4xl font-semibold tracking-[-0.04em] text-ink dark:text-white sm:text-5xl">
+            2일 운영 구성
+          </h2>
+          <p class="pretty ko-keep mt-6 max-w-md text-base leading-8 text-slate-600 dark:text-slate-400">
+            1일차에는 강의 구조와 핵심 메시지를 정리하고, 2일차에는 질문, 활동, 시연, 피드백을 반영해 수정안을 확정합니다.
+          </p>
+        </div>
+
+        <div class="relative">
+          <div class="reveal mb-8 overflow-hidden rounded-[30px] border border-slate-900/10 bg-[linear-gradient(135deg,rgba(238,243,255,0.95)_0%,rgba(255,255,255,0.96)_45%,rgba(232,222,207,0.78)_100%)] p-6 dark:border-white/10 dark:bg-[linear-gradient(135deg,rgba(15,26,48,0.98)_0%,rgba(16,24,39,0.96)_52%,rgba(20,40,72,0.9)_100%)]">
+            <div class="relative overflow-hidden rounded-[24px] border border-cobalt/12 bg-white/70 dark:border-white/10 dark:bg-white/5">
+              <div class="relative aspect-[16/9] overflow-hidden">
+                <img
+                  src="실습장면_워크숍.jpeg"
+                  alt="밝은 교육 공간에서 다양한 국적의 성인 학습자들이 테이블에 둘러앉아 토론하는 장면"
+                  class="h-full w-full object-cover object-center"
+                />
+                <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.1)_0%,rgba(15,23,42,0.04)_34%,rgba(15,23,42,0.58)_100%)]"></div>
+                <div class="absolute inset-x-5 bottom-5 max-w-xl rounded-[22px] border border-white/20 bg-white/90 px-5 py-4 text-ink shadow-[0_18px_42px_rgba(15,23,42,0.18)] backdrop-blur">
+                  <p class="balance ko-keep text-lg font-semibold tracking-[-0.03em] text-cobalt">질문·토론·피드백 중심 운영</p>
+                  <p class="pretty ko-keep mt-2 text-sm leading-6 text-slate-600">설명 중심 과정이 아니라 상호 검토와 피드백을 반영하는 방식으로 운영합니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="absolute left-3 top-3 hidden h-[calc(100%-24px)] w-px bg-cobalt/20 lg:block dark:bg-white/10"></div>
+          <div class="space-y-8">
+            <article class="reveal relative rounded-[28px] border border-slate-900/10 bg-white/75 p-8 shadow-plane dark:border-white/10 dark:bg-white/5">
+              <span class="absolute left-[-4px] top-10 hidden h-3 w-3 rounded-full bg-cobalt lg:block"></span>
+              <p class="font-mono text-xs uppercase tracking-[0.28em] text-slate-500 dark:text-slate-400">1일차</p>
+              <h3 class="balance ko-keep mt-4 text-3xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">대상, 목표, 메시지, 구조를 확정합니다.</h3>
+              <ul class="mt-6 space-y-3 text-base leading-8 text-slate-700 dark:text-slate-300">
+                <li>주력 강의의 현재 구성과 문제를 진단합니다.</li>
+                <li>대상자와 적용 목적을 재정의합니다.</li>
+                <li>학습 목표와 핵심 메시지를 확정합니다.</li>
+                <li>내용 구성과 진행 순서를 재구성합니다.</li>
+              </ul>
+              <p class="mt-6 border-t border-slate-900/10 pt-6 text-sm leading-7 text-slate-500 dark:border-white/10 dark:text-slate-400">
+                1일차 종료 시점 산출물: 주력 강의 1차 구조안
+              </p>
+            </article>
+
+            <article class="reveal relative rounded-[28px] border border-slate-900/10 bg-cobalt px-8 py-8 text-white shadow-plane">
+              <span class="absolute left-[-4px] top-10 hidden h-3 w-3 rounded-full bg-brass lg:block"></span>
+              <p class="font-mono text-xs uppercase tracking-[0.28em] text-white/70">2일차</p>
+              <h3 class="balance ko-keep mt-4 text-3xl font-semibold tracking-[-0.03em]">질문, 활동, 시연, 피드백을 반영합니다.</h3>
+              <ul class="mt-6 space-y-3 text-base leading-8 text-white/88">
+                <li>학습자 참여 구조와 질문 흐름을 설계합니다.</li>
+                <li>사례, 활동, 피드백의 적용 기준을 정리합니다.</li>
+                <li>핵심 구간을 시연하고 피드백을 반영합니다.</li>
+                <li>전달기법과 수정 우선순위를 확정합니다.</li>
+              </ul>
+              <p class="mt-6 border-t border-white/15 pt-6 text-sm leading-7 text-white/68">
+                2일차 종료 시점 산출물: 주력 강의 개선안과 수정 우선순위
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="border-y border-slate-900/10 bg-[linear-gradient(180deg,rgba(15,45,104,0.04),transparent)] py-20 dark:border-white/10 dark:bg-[linear-gradient(180deg,rgba(74,125,255,0.08),transparent)]">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+        <div class="reveal flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <h2 class="balance ko-keep font-display text-4xl font-semibold tracking-[-0.04em] text-ink dark:text-white sm:text-5xl">
+              과정 종료 후 확보하는 산출물
+            </h2>
+          </div>
+          <p class="max-w-xl text-base leading-7 text-slate-600 dark:text-slate-400">
+            주력 강의의 재운영에 필요한 기준과 수정 자료를 확보합니다.
+          </p>
+        </div>
+
+        <div class="reveal mt-14 overflow-hidden rounded-[30px] border border-slate-900/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.95)_0%,rgba(246,241,232,0.96)_48%,rgba(232,222,207,0.82)_100%)] p-6 dark:border-white/10 dark:bg-[linear-gradient(135deg,rgba(16,24,39,0.98)_0%,rgba(12,20,34,0.96)_52%,rgba(31,41,55,0.92)_100%)]">
+          <div class="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
+            <div class="relative overflow-hidden rounded-[24px] border border-cobalt/12 bg-white/70 dark:border-white/10 dark:bg-white/5">
+              <div class="relative aspect-[16/9] overflow-hidden">
+                <img
+                  src="결과물디테일_워크북.jpeg"
+                  alt="워크북, 노트북, 피드백 메모와 다과가 놓인 결과물 테이블 장면"
+                  class="h-full w-full object-cover object-center"
+                />
+                <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.02)_0%,rgba(15,23,42,0.06)_56%,rgba(15,23,42,0.22)_100%)]"></div>
+              </div>
+            </div>
+
+            <div class="rounded-[24px] border border-cobalt/12 bg-white/72 px-6 py-6 dark:border-white/10 dark:bg-white/5">
+              <p class="balance ko-keep text-2xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">주요 산출물</p>
+              <ul class="mt-5 space-y-3 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                <li>강의 구조안</li>
+                <li>수정 포인트 기록</li>
+                <li>수정 우선순위 메모</li>
+                <li>현장 운영에 활용 가능한 강의 자료</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <div class="reveal rounded-[26px] border border-slate-900/10 bg-white/80 p-6 dark:border-white/10 dark:bg-white/5">
+            <p class="mt-1 text-2xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">주력 강의 개선안</p>
+            <p class="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-400">수정 항목과 우선순위를 반영한 개선안을 도출합니다.</p>
+          </div>
+          <div class="reveal rounded-[26px] border border-slate-900/10 bg-white/80 p-6 dark:border-white/10 dark:bg-white/5">
+            <p class="mt-1 text-2xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">메시지 및 구조안</p>
+            <p class="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-400">대상자, 학습 목표, 핵심 메시지, 기본 구조를 다시 정리합니다.</p>
+          </div>
+          <div class="reveal rounded-[26px] border border-slate-900/10 bg-white/80 p-6 dark:border-white/10 dark:bg-white/5">
+            <p class="mt-1 text-2xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">촉진 및 전달 기준</p>
+            <p class="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-400">질문, 활동, 피드백, 전달 방식의 수정 포인트를 정리합니다.</p>
+          </div>
+          <div class="reveal rounded-[26px] border border-slate-900/10 bg-white/80 p-6 dark:border-white/10 dark:bg-white/5">
+            <p class="mt-1 text-2xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">수정 우선순위</p>
+            <p class="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-400">우선 수정 항목과 적용 순서를 결정합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10">
+      <div class="grid gap-12 lg:grid-cols-[0.92fr_1.08fr]">
+        <div class="reveal">
+          <h2 class="balance ko-keep font-display text-4xl font-semibold tracking-[-0.04em] text-ink dark:text-white sm:text-5xl">
+            운영 정보
+          </h2>
+        </div>
+
+        <div class="reveal space-y-10">
+          <div class="grid gap-6 sm:grid-cols-2">
+            <div class="border-t border-cobalt/20 pt-5 dark:border-white/10">
+              <p class="text-sm font-semibold text-slate-500 dark:text-slate-400">일정</p>
+              <p class="mt-2 text-2xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">2026년 5월 1일-2일</p>
+              <p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">2일 공개과정</p>
+            </div>
+            <div class="border-t border-cobalt/20 pt-5 dark:border-white/10">
+              <p class="text-sm font-semibold text-slate-500 dark:text-slate-400">운영 방식</p>
+              <p class="mt-2 text-2xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">소규모 운영</p>
+              <p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">토론과 피드백이 가능한 규모로 운영</p>
+            </div>
+            <div class="border-t border-cobalt/20 pt-5 dark:border-white/10">
+              <p class="text-sm font-semibold text-slate-500 dark:text-slate-400">참가비</p>
+              <p class="mt-2 text-2xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">110만원</p>
+              <p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">부가세 포함, 풀패키지 운영</p>
+            </div>
+            <div class="border-t border-cobalt/20 pt-5 dark:border-white/10">
+              <p class="text-sm font-semibold text-slate-500 dark:text-slate-400">제공 사항</p>
+              <p class="mt-2 text-2xl font-semibold tracking-[-0.03em] text-cobalt dark:text-white">교재·식사·다과</p>
+              <p class="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">교재, 식사, 음료 및 다과 제공</p>
+            </div>
+          </div>
+
+          <div class="rounded-[30px] border border-slate-900/10 bg-cobalt px-7 py-7 text-white dark:border-white/10">
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-white/68">참가 전 준비</p>
+            <h3 class="mt-4 text-3xl font-semibold tracking-[-0.03em]">사전 준비 자료</h3>
+            <ul class="mt-6 space-y-3 text-base leading-8 text-white/86">
+              <li>주력 강의 1개</li>
+              <li>개인 노트북</li>
+              <li>강의 개요, 교안, 슬라이드 등 제출 가능한 자료</li>
+              <li>우선 개선 과제 1-2개</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-slate-900/10 bg-white/70 py-20 dark:border-white/10 dark:bg-white/5">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+        <div class="reveal flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <h2 class="balance ko-keep font-display text-4xl font-semibold tracking-[-0.04em] text-ink dark:text-white sm:text-5xl">
+              자주 묻는 질문
+            </h2>
+          </div>
+          <p class="max-w-xl text-base leading-7 text-slate-600 dark:text-slate-400">
+            참가 신청 전 주요 문의 사항입니다.
+          </p>
+        </div>
+
+        <div class="mt-14 space-y-4">
+          <details class="reveal group rounded-[22px] border border-slate-900/10 bg-white/90 p-6 dark:border-white/10 dark:bg-night/60" open>
+            <summary class="cursor-pointer list-none text-lg font-semibold text-ink marker:hidden dark:text-white">이 과정은 스피치 과정인가요?</summary>
+            <p class="mt-4 text-base leading-8 text-slate-700 dark:text-slate-300">아닙니다. 스피치 기술만 다루는 과정이 아닙니다. 주력 강의 1개를 기준으로 교수설계, 학습자 촉진, 전달기법을 함께 정리하는 과정입니다.</p>
+          </details>
+          <details class="reveal group rounded-[22px] border border-slate-900/10 bg-white/90 p-6 dark:border-white/10 dark:bg-night/60">
+            <summary class="cursor-pointer list-none text-lg font-semibold text-ink marker:hidden dark:text-white">초보 강사도 신청할 수 있나요?</summary>
+            <p class="mt-4 text-base leading-8 text-slate-700 dark:text-slate-300">이 과정은 이미 강의를 운영 중인 강사를 대상으로 합니다. 강의 경험이 거의 없거나 발표 기술만 단기간에 학습하려는 경우에는 적합도가 낮습니다.</p>
+          </details>
+          <details class="reveal group rounded-[22px] border border-slate-900/10 bg-white/90 p-6 dark:border-white/10 dark:bg-night/60">
+            <summary class="cursor-pointer list-none text-lg font-semibold text-ink marker:hidden dark:text-white">과정 종료 후 어떤 산출물을 받게 되나요?</summary>
+            <p class="mt-4 text-base leading-8 text-slate-700 dark:text-slate-300">주력 강의 개선안, 미니 시연 피드백 기록, 전달기법 점검 포인트, 수정 우선순위가 정리됩니다.</p>
+          </details>
+          <details class="reveal group rounded-[22px] border border-slate-900/10 bg-white/90 p-6 dark:border-white/10 dark:bg-night/60">
+            <summary class="cursor-pointer list-none text-lg font-semibold text-ink marker:hidden dark:text-white">추천 혜택은 어떻게 운영되나요?</summary>
+            <p class="mt-4 text-base leading-8 text-slate-700 dark:text-slate-300">지인 추천으로 신규 참가자가 등록하고 실제 참석까지 완료하면 추천인께 과정 종료 후 1:1 코칭 1회를 제공합니다.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="register" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10">
+      <div class="reveal relative overflow-hidden rounded-[34px] bg-[linear-gradient(135deg,#0f2d68_0%,#13398b_56%,#4a7dff_100%)] px-6 py-12 text-white shadow-plane sm:px-10 lg:px-14">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.18),transparent_28%)]"></div>
+        <div class="relative grid gap-10 lg:grid-cols-[1fr_360px] lg:items-end">
+          <div>
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-white/68">신청 안내</p>
+            <h2 class="balance ko-keep mt-4 max-w-3xl font-display text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">
+              신청 및 문의
+            </h2>
+            <p class="pretty ko-keep mt-5 max-w-2xl text-base leading-8 text-white/82">
+              참가 신청은 아래 신청서로 접수합니다. 신청 내용 확인 후 등록 및 결제 안내를 순차적으로 드립니다.
+            </p>
+            <div class="mt-8 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-[24px] border border-white/15 bg-white/8 p-5">
+                <p class="text-sm font-semibold text-white/68">신청 링크</p>
+                <p class="mt-2 text-lg font-semibold">구글 폼 신청서</p>
+                <p class="mt-2 text-sm leading-7 text-white/72">신청서 제출 후 신청 내용 확인, 등록, 결제 안내 순서로 진행합니다.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScaahS-ihUZisA6IBUVKAzrQgRic4pA5SZdUAyvx5PwVixyow/viewform" target="_blank" rel="noreferrer" class="mt-4 inline-flex items-center justify-center rounded-full bg-white px-4 py-2 text-sm font-semibold text-cobalt transition hover:bg-slate-100">
+                  신청서 열기
+                </a>
+              </div>
+              <div class="rounded-[24px] border border-white/15 bg-white/8 p-5">
+                <p class="text-sm font-semibold text-white/68">문의 채널</p>
+                <p class="mt-2 text-lg font-semibold">이메일 문의</p>
+                <p class="mt-2 text-sm leading-7 text-white/72">과정 문의는 아래 메일로 보내주시면 확인 후 회신드립니다.</p>
+                <a href="mailto:jongmokj@gmail.com" class="mt-4 inline-flex items-center justify-center rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10">
+                  jongmokj@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-[28px] border border-white/15 bg-white/10 p-6 backdrop-blur">
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-white/68">기본 정보</p>
+            <div class="mt-5 space-y-4 text-sm leading-7 text-white/84">
+              <div class="border-b border-white/10 pb-4">
+                <p class="text-white/62">일정</p>
+                <p class="mt-1 text-lg font-semibold">2026년 5월 1일(금)-2일(토)</p>
+              </div>
+              <div class="border-b border-white/10 pb-4">
+                <p class="text-white/62">대상</p>
+                <p class="mt-1 text-lg font-semibold">이미 강의를 운영 중인 현업 강사</p>
+              </div>
+              <div class="border-b border-white/10 pb-4">
+                <p class="text-white/62">핵심 축</p>
+                <p class="mt-1 text-lg font-semibold">교수설계 · 학습자 촉진 · 전달기법</p>
+              </div>
+              <div>
+                <p class="text-white/62">제공 사항</p>
+                <p class="mt-1 text-lg font-semibold">교재, 식사, 음료 및 다과</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-900/10 bg-white/80 dark:border-white/10 dark:bg-night/85">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 text-sm text-slate-500 dark:text-slate-400 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-10">
+      <p>주력 강의 재설계 과정</p>
+      <p>자신의 강의를 한 단계 업그레이드하고 싶은 강사를 위한 2일 공개과정</p>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "이 과정은 스피치 과정인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아닙니다. 스피치 기술만 다루는 과정이 아닙니다. 주력 강의 1개를 기준으로 교수설계, 학습자 촉진, 전달기법을 함께 정리하는 과정입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "초보 강사도 신청할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "이 과정은 이미 강의를 운영 중인 강사를 대상으로 합니다. 강의 경험이 거의 없거나 발표 기술만 단기간에 학습하려는 경우에는 적합도가 낮습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "과정 종료 후 어떤 산출물을 받게 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "주력 강의 개선안, 미니 시연 피드백 기록, 전달기법 점검 포인트, 수정 우선순위가 정리됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "추천 혜택은 어떻게 운영되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "지인 추천으로 신규 참가자가 등록하고 실제 참석까지 완료하면 추천인께 과정 종료 후 1:1 코칭 1회를 제공합니다."
+          }
+        }
+      ]
+    }
+  </script>
+
+  <script>
+    const root = document.documentElement;
+    const themeButtons = Array.from(document.querySelectorAll('[data-theme]'));
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function applyTheme(theme) {
+      const resolved = theme === 'system' ? (mediaQuery.matches ? 'dark' : 'light') : theme;
+      root.classList.toggle('dark', resolved === 'dark');
+      themeButtons.forEach((button) => {
+        const active = button.dataset.theme === theme;
+        button.classList.toggle('bg-cobalt', active);
+        button.classList.toggle('text-white', active);
+        button.classList.toggle('dark:bg-white', active);
+        button.classList.toggle('dark:text-night', active);
+      });
+    }
+
+    const storedTheme = localStorage.getItem('teaching-course-theme') || 'system';
+    applyTheme(storedTheme);
+
+    themeButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const nextTheme = button.dataset.theme;
+        localStorage.setItem('teaching-course-theme', nextTheme);
+        applyTheme(nextTheme);
+      });
+    });
+
+    mediaQuery.addEventListener('change', () => {
+      const activeTheme = localStorage.getItem('teaching-course-theme') || 'system';
+      if (activeTheme === 'system') {
+        applyTheme('system');
+      }
+    });
+
+  </script>
+</body>
+</html>

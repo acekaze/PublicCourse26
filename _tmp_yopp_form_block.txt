@@ -1,0 +1,1400 @@
+        <input type="hidden" name="mode" value="getPrintOptionPrice" />
+        <input type="hidden" name="response" value="" />
+        <input type="hidden" name="printOption" value="" />
+        <input type="hidden" name="goodsNo" value="1000000069" />
+        <input type="hidden" name="optionSno" value="1068" />
+        <input type="hidden" name="memberGroupSno" value="" />
+        <input id="prd_code" type="hidden" name="prdCode" value="">
+        <input id="designRequestSno" type="hidden" name="designSno" value="">
+
+        <!--        <input type="hidden" name="coverFile[]" class="coverFile_0" data-sno="0" value='' />-->
+        <!--        <input type="hidden" name="innerFile[]" class="innerFile_0" data-sno="0" value='' />-->
+        <!--        <input type="hidden" name="foilFile[]" class="foilFile_0" data-sno="0" value='' />-->
+        <!--        <input type="hidden" name="epoxyFile[]" class="epoxyFile_0" data-sno="0" value='' />-->
+
+        <input type="hidden" name="coverFiles[]" class="coverFiles_0" data-sno="0" value='' />
+        <input type="hidden" name="innerFiles[]" class="innerFiles_0" data-sno="0" value='' />
+        <input type="hidden" name="etcFiles[]" class="etcFiles_0" />
+
+        <input type="hidden" name="is_urgent" value="n" />
+        <input type="hidden" name="viewType" value="prof" />
+        <input type="hidden" name="designOrderSno" value="" />
+        <input type="hidden" name="designTypeSno" value="0" />
+        <input type="hidden" name="designPrice" value="0" />
+
+        <div class="btn_layer btn_qa_share_box">
+
+        </div>
+        <!-- //btn_qa_share_box -->
+
+        <h2 class="GoodViewTitle">책 만들기 (도서출판)</h2>
+
+        <div class="goods-view-box" style="margin-top: 10px">
+            <!-- 책자인쇄주문_Left// -->
+<div class="goods-view-form">
+    <!-- 설명이미지// -->
+    <div class="GoodViewSimple">
+		<img src="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/ProductBooks_Info.png" alt="주문과 동시에 무인으로 인쇄 공정으로 전달되기에 결제 후 취소가 불가합니다. 한번 더 제작사양과 파일 확인해주세요. 자동검수는 책자인쇄 주문에만 적용됩니다." />
+	</div>
+	<!-- //설명이미지 -->
+	
+	<!-- 책자인쇄주문_상단// -->
+    <div id="GoodViewFormType">
+        <table id="GoodViewTable">
+            <colgroup>
+                <col width="50%" />
+                <col width="50%" />
+            </colgroup>
+            <tbody>
+            <tr>
+                <th class="BookTitle">제목</th>
+                <th class="BookAmount">수량</th>
+            </tr>
+            <tr>
+                <td class="BookTitleInput">
+                    <!-- 제목 -->
+                    <input type="text" placeholder="주문명을 입력하세요." class="InputTWhite print_option_item" name="book_name" data-reqNm="제목" data-group="basic_options"
+                           value="" required />
+                </td>
+                <td class="BookAmountInput">
+                    <!-- 수량 -->
+                    <label>
+                        <input type="text" class="InputTWhite print_option_item" name="order_quantity"
+                               value="10" data-group="basic_options" data-reqNm="출판 수량" required
+                        />
+                        부
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">사이즈</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="RadioLabel">
+                        <label>
+                            <input type="radio" value="A4" class="paper_size_type print_option_item" name="paper_size_type"
+                                   data-width="210" data-height="297" data-group="basic_options"
+checked />
+                            <span>A4</span>
+                        </label>
+                        <label>
+                            <input type="radio" value="A5" class="paper_size_type print_option_item" name="paper_size_type"
+                                   data-width="148" data-height="210" data-group="basic_options"
+ />
+                            <span>A5</span>
+                        </label>
+                        <label>
+                            <input type="radio" value="B5" class="paper_size_type print_option_item" name="paper_size_type"
+                                   data-width="182" data-height="257" data-group="basic_options"
+ />
+                            <span>B5</span>
+                        </label>
+                        <label>
+                            <input type="radio" value="크라운판" class="paper_size_type print_option_item" name="paper_size_type"
+                                   data-width="176" data-height="248" data-group="basic_options"
+ />
+                            <span>크라운판</span>
+                        </label>
+                        <label>
+                            <input type="radio" value="신국판" class="paper_size_type print_option_item" name="paper_size_type"
+                                   data-width="152" data-height="225" data-group="basic_options"
+ />
+                            <span>신국판</span>
+                        </label>
+                        <label>
+                            <input type="radio" value="user_size" class="paper_size_type print_option_item" name="paper_size_type"
+                                   data-width="210" data-height="297" data-group="basic_options"
+ />
+                            <span>직접입력</span>
+                        </label>
+                    </div>
+                    <div class="PrintSize">
+                        <dl class="PrintSizeLeft">
+                            <dt>제작 사이즈</dt>
+                            <dd class="custom_size_block">
+                                <ul>
+                                    <li>가로</li>
+                                    <li>
+                                        <input type="text" name="size_x_mm" class="print_option_item InputTWhite2" value="210" data-group="basic_options"
+readonly                                        />
+                                    </li>
+                                    <li>mm</li>
+                                    <li>x</li>
+                                    <li>세로</li>
+                                    <li>
+                                        <input type="text" name="size_y_mm" class="print_option_item InputTWhite2" value="297" data-group="basic_options"
+readonly                                        />
+                                    </li>
+                                    <li>mm</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="PrintSizeRight">
+                            <dt>편집 사이즈</dt>
+                            <dd>
+                                <ul>
+                                    <li>가로</li>
+                                    <li>
+                                        <input type="text" class="InputTWhite2 edit_size_inp_x" value="216" readonly />
+                                    </li>
+                                    <li>mm</li>
+                                    <li>x</li>
+                                    <li>세로</li>
+                                    <li>
+                                        <input type="text" class="InputTWhite2 edit_size_inp_y" value="303" readonly />
+                                    </li>
+                                    <li>mm</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="PrintSizeLeft">
+                            <dt>내지 편집 사이즈</dt>
+                            <dd>
+                                <ul>
+                                    <li>가로</li>
+                                    <li>
+                                        <input type="text" class="InputTWhite2 edit_size_inp_x" value="216" readonly />
+                                    </li>
+                                    <li>mm</li>
+                                    <li>x</li>
+                                    <li>세로</li>
+                                    <li>
+                                        <input type="text" class="InputTWhite2 edit_size_inp_y" value="303" readonly />
+                                    </li>
+                                    <li>mm</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="PrintSizeRight">
+                            <dt>책등(세네카) 사이즈</dt>
+                            <dd>
+                                <ul>
+                                    <li>가로</li>
+                                    <li><input type="text" name='seneka' class="InputTWhite2" readonly /></li>
+                                    <li>mm</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    인쇄<span>/ 인쇄에 대해서 궁금하다면 클릭</span>
+                    <!--클릭하면 현재 주문창에서 ? 눌렀을 때 나오는 팝업이 나오게 해주세요.ㅣ-->
+                    <a href="#optionItemDescLayer" class="open-layer-btn add-info" data-type="leftOptionTip" data-img="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/PrintingPressComparison.png"
+                       data-title="인쇄기">
+                        <img src="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/BtnMore.png" alt="MORE">
+                    </a>
+                </th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="RadioLabel">
+                        <label>
+                            <input type="radio" class="print_option_item" name="print_type" value="rollprint"
+checked  />
+                            <span>윤전인쇄</span>
+                        </label>
+                        <label>
+                            <input type="radio" class="print_option_item" name="print_type" value="indigo"
+  />
+                            <span>인디고인쇄</span>
+                        </label>
+                        <label>
+                            <input type="radio" class="print_option_item" name="print_type" value="toner"
+  />
+                            <span>토너인쇄</span>
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- //책자인쇄주문_상단 -->
+
+    <!-- 책자인쇄주문_제본// -->
+    <h3 class="GoodViewSTitle">제본</h3>
+    <div id="GoodViewFormType">
+        <table id="GoodViewTable">
+            <colgroup>
+                <col width="100%" />
+            </colgroup>
+            <tbody>
+            <tr>
+                <th>
+                    형태
+                    <span>/&nbsp;&nbsp;제본의 형태에 대해서 궁금하다면 클릭</span>
+                    <!--클릭하면 현재 주문창에서 ? 눌렀을 때 나오는 팝업이 나오게 해주세요.ㅣ-->
+                    <a href="#optionItemDescLayer" class="open-layer-btn add-info" data-type="leftOptionTip" data-img="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/BindingType.png"
+                       data-title="형태">
+                        <img src="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/BtnMore.png" alt="MORE">
+                    </a>
+                </th>
+            </tr>
+            <tr>
+                <td class="select-binding">
+                    <div class="RadioLabel">
+                        <label>
+                            <input id="Binding_perfect" type="radio" name="binding_type" class="binding_type inp-select-binding print_option_item"
+                                   data-group="binding" value="무선" onclick="setEvent('perfect')"
+ checked  >
+                            <span>
+                                    무선
+                                </span>
+                        </label>
+                        <label>
+                            <input id="Binding_perfect_bound" type="radio" name="binding_type" class="binding_type  print_option_item"
+                                   data-group="binding" value="무선(날개)" onclick="setEvent('perfect_bound')"
+ >
+                            <span>
+                                    무선날개
+                                </span>
+                        </label>
+                        <label>
+                            <input id="Binding_spiral" type="radio" name="binding_type" class="binding_type  print_option_item"
+                                   data-group="binding" value="스프링제본(트윈링)" onclick="setEvent('spiral')"
+ >
+                            <span>
+                                    트윈링
+                                </span>
+                        </label>
+                        <label>
+                            <input id="Binding_crystal_ring" type="radio" name="binding_type" class="binding_type  print_option_item"
+                                   data-group="binding" value="크리스탈링제본" onclick="setEvent('crystal_ring')"
+ >
+                            <span>
+                                    코일링
+                                </span>
+                        </label>
+                        <label>
+                            <input id="Binding_saddle_stitching" type="radio" name="binding_type" class="binding_type  print_option_item"
+                                   data-group="binding" value="중철" onclick="setEvent('saddle_stitching')"
+ >
+                            <span>
+                                    중철
+                                </span>
+                        </label>
+                    </div>
+
+                    <!-- 링 색상// -->
+                    <div class="Binding_spiral Binding_crystal_ring ring_color_block"
+ style="display: none;"  >
+                    <h4 class="GoodViewSTitle2">링 색상</h4>
+                    <div class="RadioLabel">
+                        <label class="InputRWhite">
+                            <input type="radio" class="print_option_item inp_binding_ring_color" name="ring_color" value="흰색"
+  />
+                            <span>흰색</span>
+                        </label>
+                        <label class="InputRWhite">
+                            <input type="radio" class="print_option_item inp_binding_ring_color" name="ring_color" value="은색"
+  />
+                            <span>은색</span>
+                        </label>
+                        <label class="InputRWhite">
+                            <input type="radio" class="print_option_item inp_binding_ring_color" name="ring_color" value="검정색"
+  />
+                            <span>검정색</span>
+                        </label>
+                        <label class="InputRWhite">
+                            <input type="radio" class="print_option_item inp_binding_ring_color" name="ring_color" value="투명"
+  />
+                            <span>투명</span>
+                        </label>
+                    </div>
+    </div>
+    <!-- //링 색상 -->
+
+    <!-- 무선날개_상세 선택// -->
+    <div class="PrintSize binding-option-item Binding_perfect_bound"  style="display: none;"  >
+    <dl>
+        <dt>날개 사이즈<span>50~120mm, 날개 최대 길이 120mm 한정이며, 표지 규격의 최대 80% 이상 초과할 수 없습니다.</span></dt>
+        <dd class="select-detail-option">
+            <ul class="option-size">
+                <li>앞날개</li>
+                <li>
+                    <input type="text" name="cover_left_flap_width_mm" class="InputTWhite2 print_option_item cover_flap_size input_number"
+                           value="" data-min="50" data-max="120" data-chk="size_x_mm">
+                </li>
+                <li>mm</li>
+                <li>뒷날개</li>
+                <li>
+                    <input type="text" name="cover_right_flap_width_mm" class="InputTWhite2 cover_flap_size input_number"
+                           value="" data-min="50" data-max="120" data-chk="size_x_mm">
+                </li>
+                <li>mm</li>
+            </ul>
+        </dd>
+    </dl>
+</div>
+<!-- //무선날개_상세 선택 -->
+</td>
+</tr>
+
+<tr class="tr_cover_type_display dn">
+    <th>
+        커버타입<span>/&nbsp;&nbsp;표지 커버 타입에 대해서 궁금하다면 클릭</span>
+        <!--클릭하면 현재 주문창에서 ? 눌렀을 때 나오는 팝업이 나오게 해주세요.ㅣ-->
+        <a href="#optionItemDescLayer" class="open-layer-btn add-info" data-type="leftOptionTip" data-img="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/BindingCoverType.png"
+           data-title="커버타입">
+            <img src="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/BtnMore.png" alt="MORE">
+        </a>
+    </th>
+</tr>
+<tr class="tr_cover_type_display dn">
+    <td>
+                        <span class="RadioLabel">
+                            <label>
+                                <input type="radio" class="print_option_item inp-cover-type" name="cover_type" value="소프트 커버"
+                                       onclick="setUseHardCoverOption(false);"
+ checked                                 />
+                                <span>소프트 커버</span>
+                            </label>
+                            <label class="dn">
+                                <input type="radio" class="print_option_item inp-cover-type" name="cover_type" value="낱장 커버"
+ disabled                                 />
+                                <span>낱장 커버</span>
+                            </label>
+                            <label>
+                                <input type="radio" class="print_option_item inp-cover-type" name="cover_type" value="하드 커버"
+                                       onclick="setUseHardCoverOption(true);"
+                                />
+                                <span>하드 커버</span>
+                            </label>
+                        </span>
+
+        <div class="cover-type-detail  dn ">
+            <h4 class="GoodViewSTitle2">커버 종류</h4>
+            <div class="RadioLabel">
+                <label class="InputRWhite">
+                    <input type="radio" class="print_option_item" name="plastic_cover" data-group="binding" value=""
+                    checked
+ />
+                    <span>없음</span>
+                </label>
+                <label class="InputRWhite">
+                    <input type="radio" class="print_option_item" name="plastic_cover" data-group="binding" value="빗살무늬"
+ />
+                    <span>빗살</span>
+                </label>
+                <label class="InputRWhite">
+                    <input type="radio" class="print_option_item" name="plastic_cover" data-group="binding" value="투명"
+ />
+                    <span>투명</span>
+                </label>
+                <label class="InputRWhite">
+                    <input type="radio" class="print_option_item" name="plastic_cover" data-group="binding" value="반투명"
+ />
+                    <span>반투명</span>
+                </label>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<tr class="inside-paper-kind hard-cover-option dn">
+    <th>하드커버 설정<!--{ 하드커버 모서리 종류 --></th>
+</tr>
+<tr class="inside-paper-kind hard-cover-option dn">
+    <td>
+        <div class="RadioLabel hard-cover-option dn" >
+            <label class="InputRWhite">
+                <select name="hardcover_type" class="form-select w230 print_option_item" data-group="binding" disabled  >
+                <option value="각양장" >각양장</option>
+
+                <option value="환양장" >환양장</option>
+
+                </select>
+            </label>
+            <label class="InputRWhite">
+                <select name="headband_color" class="form-select w230 print_option_item" data-group="binding" disabled 2 >
+                <option value="검정" >검정</option>
+
+                <option value="곤백색" >곤백색</option>
+
+                </select>
+            </label>
+        </div>
+    </td>
+</tr>
+<tr class="inside-paper-kind hard-cover-option dn">
+    <td>
+        <div class="CheckLabel hard-cover-option dn">
+            <label class="InputRWhite">
+                <input type="checkbox" name="tailband_thickness_mm" class="print_option_item form-checkbox" data-group="binding" value="5"
+disabled                />
+                <span>가름끈 사용</span>
+            </label>
+            <label class="InputRWhite">
+                <select name="tailband_color" class="form-select w230 print_option_item" data-group="binding" disabled>
+                <option value="">가름끈 선택</option>
+                <option value="화이트"
+ >백색</option>
+                <option value="검정"
+ >검정색</option>
+                <option value="적색"
+ >적색</option>
+                <option value="수박색"
+ >수박색</option>
+                <option value="곤색"
+ >곤색</option>
+                <option value="금색"
+ >금색</option>
+                </select>
+            </label>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <th>
+        <!-- 방향 -->
+        방향<span>/&nbsp;&nbsp;제본 방향에 대해서 궁금하다면 클릭</span>
+        <!--클릭하면 현재 주문창에서 ? 눌렀을 때 나오는 팝업이 나오게 해주세요.ㅣ-->
+        <a href="#optionItemDescLayer" class="open-layer-btn add-info" data-type="leftOptionTip" data-img="https://www.yopp.co.kr/data/skin/front/designbookR_blainsho/_dbook/img/BindingDirection.png"
+           data-title="방향">
+            <img src="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/BtnMore.png" alt="MORE">
+        </a>
+    </th>
+</tr>
+<tr class="direction-table">
+    <td>
+        <div class="RadioLabel direction-type1">
+            <label class="vertical-left">
+                <input type="radio" class="form-radio" name="binding_direction" class="print_option_item" data-group="binding" value="세로형좌철"
+ checked                 onclick="resetPageOrientation(true)"
+                />
+                <span>세로형좌철</span>
+            </label>
+            <label class="horizontal-left">
+                <input type="radio" class="form-radio" name="binding_direction" class="print_option_item" data-group="binding" value="가로형좌철"
+ onclick="resetPageOrientation(true)"/>
+                <span>가로형좌철</span>
+            </label>
+            <label class="vertical-top">
+                <input type="radio" class="form-radio" name="binding_direction" class="print_option_item" data-group="binding" value="세로형상철"
+ onclick="resetPageOrientation(false)"/>
+                <span>세로형상철</span>
+            </label>
+            <label class="horizontal-top">
+                <input type="radio" class="form-radio" name="binding_direction" class="print_option_item" data-group="binding" value="가로형상철"
+ onclick="resetPageOrientation(false)"/>
+                <span>가로형상철</span>
+            </label>
+        </div>
+    </td>
+</tr>
+<tr>
+    <!-- 세로형 상철_상세 선택// -->
+    <td class="direction-type2" style="display:none;">
+    <h4 class="GoodViewSTitle2">세로형 상철</h4>
+    <div class="RadioLabel">
+        <label class="InputRWhite">
+            <input type="radio" class="print_option_item" name="top_bind_double_side_page_orientation" value="머리머리"
+checked>
+            <span>머리머리넘김</span>
+        </label>
+        <label class="InputRWhite">
+            <input type="radio" class="print_option_item" name="top_bind_double_side_page_orientation" value="머리꼬리"
+>
+            <span>머리꼬리넘김</span>
+        </label>
+    </div>
+    </td>
+    <!-- //세로형 상철_상세 선택 -->
+</tr>
+</tbody>
+</table>
+</div>
+<!-- //책자인쇄주문_제본 -->
+
+<!-- 책자인쇄주문_표지&내지// -->
+<div class="GoodViewCoverType">
+    <!-- 책자인쇄주문_표지// -->
+    <div class="GoodViewCover">
+        <h3 class="GoodViewSTitle">표지</h3>
+        <div id="GoodViewFormType">
+            <table id="GoodViewTable">
+                <colgroup>
+                    <col width="100%" />
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th>
+                        <!-- 용지 -->
+                        용지<span>/&nbsp;&nbsp;인쇄용지에 대해서 궁금하다면 클릭</span>
+                        <!--클릭하면 현재 주문창에서 ? 눌렀을 때 나오는 팝업이 나오게 해주세요.ㅣ-->
+                        <a href="#optionItemDescLayer" class="open-layer-btn add-info" data-type="leftOptionTip" data-img="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/PaperType.png"
+                           data-title="용지">
+                            <img src="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/BtnMore.png" alt="MORE">
+                        </a>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="Grid">
+                        <div class="RadioLabel">
+                            <!-- 일반지 / 고급지 -->
+                            <select name="paperGrade" id="paperGrade" onchange="change_paper_grade()">
+                                <option value="standard_paper" selected >일반지</option>
+                                <option value="premium_paper"  >고급지</option>
+                            </select>
+
+                            <!-- 용지선택 -->
+                            <select id="cover_paper_name" name="cover_paper_name" class="form-select w230 paper_name print_option_item" data-group="cover" onChange="change_paper_gsm(this)">
+                                { // ? empty(printOption['cover']['default']['paper_grade_items']) || in_array(.value_['option_item_key'], printOption['cover']['default']['paper_grade_items']) }
+                                <option class="paper_grade_standard" value="아트" data-key="art" data-stdCnt="4" data-prmCnt="0"
+ selected  >
+                                아트
+                                </option>
+                                { // / }
+                                { // ? empty(printOption['cover']['default']['paper_grade_items']) || in_array(.value_['option_item_key'], printOption['cover']['default']['paper_grade_items']) }
+                                <option class="paper_grade_standard" value="스노우" data-key="snow" data-stdCnt="4" data-prmCnt="0"
+ >
+                                스노우
+                                </option>
+                                { // / }
+                                { // ? empty(printOption['cover']['default']['paper_grade_items']) || in_array(.value_['option_item_key'], printOption['cover']['default']['paper_grade_items']) }
+                                <option class="paper_grade_premium" value="아르떼 내추럴" data-key="arte_natural" data-stdCnt="0" data-prmCnt="3"
+ style="display:none;"  >
+                                아르떼 내추럴
+                                </option>
+                                { // / }
+                                { // ? empty(printOption['cover']['default']['paper_grade_items']) || in_array(.value_['option_item_key'], printOption['cover']['default']['paper_grade_items']) }
+                                <option class="paper_grade_premium" value="아르떼 화이트" data-key="arte_white" data-stdCnt="0" data-prmCnt="3"
+ style="display:none;"  >
+                                아르떼 화이트
+                                </option>
+                                { // / }
+                                { // ? empty(printOption['cover']['default']['paper_grade_items']) || in_array(.value_['option_item_key'], printOption['cover']['default']['paper_grade_items']) }
+                                <option class="paper_grade_premium" value="랑데뷰 내추럴" data-key="rendezvous_natural" data-stdCnt="0" data-prmCnt="3"
+ style="display:none;"  >
+                                랑데뷰 내추럴
+                                </option>
+                                { // / }
+                                { // ? empty(printOption['cover']['default']['paper_grade_items']) || in_array(.value_['option_item_key'], printOption['cover']['default']['paper_grade_items']) }
+                                <option class="paper_grade_premium" value="랑데뷰 화이트" data-key="rendezvous_white" data-stdCnt="0" data-prmCnt="3"
+ style="display:none;"  >
+                                랑데뷰 화이트
+                                </option>
+                                { // / }
+                                { // ? empty(printOption['cover']['default']['paper_grade_items']) || in_array(.value_['option_item_key'], printOption['cover']['default']['paper_grade_items']) }
+                                <option class="paper_grade_premium" value="앙상블 E클래스 고백색" data-key="ensemble_eclass_off_white" data-stdCnt="0" data-prmCnt="3"
+ style="display:none;"  >
+                                앙상블 E클래스 고백색
+                                </option>
+                                { // / }
+                                { // ? empty(printOption['cover']['default']['paper_grade_items']) || in_array(.value_['option_item_key'], printOption['cover']['default']['paper_grade_items']) }
+                                <option class="paper_grade_premium" value="앙상블 E클래스 백색" data-key="ensemble_eclass_pure_white" data-stdCnt="0" data-prmCnt="3"
+ style="display:none;"  >
+                                앙상블 E클래스 백색
+                                </option>
+                                { // / }
+                            </select>
+
+                            <!-- 평량 -->
+                            <select id="cover_paper_gsm" name="cover_paper_gsm" class="form-select paper_gsm print_option_item" data-group="cover">
+                                <option value="180" class="paper_grade_standard" >180g</option>
+                                <option value="200" class="paper_grade_standard" >200g</option>
+                                <option value="250" class="paper_grade_standard" selected>250g</option>
+                                <option value="300" class="paper_grade_standard" >300g</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        양면/단면<span>/&nbsp;&nbsp;양면인쇄 &amp; 단면인쇄에 대해서 궁금하다면 클릭</span>
+                        <!--클릭하면 현재 주문창에서 ? 눌렀을 때 나오는 팝업이 나오게 해주세요.ㅣ-->
+                        <a href="#optionItemDescLayer" class="open-layer-btn add-info" data-type="leftOptionTip" data-img="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/PrintingType.png"
+                           data-title="양면/단면">
+                            <img src="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/BtnMore.png" alt="MORE">
+                        </a>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="RadioLabel cover-print-radio">
+                            <label>
+                                <input type="radio" id="printing_side" name="cover_printing_side" class="form-radio print_option_item" data-group="cover" data-name="컬러 단면인쇄" value="1"
+ checked >
+                                <span>컬러 단면인쇄</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="printing_side" name="cover_printing_side" class="form-radio print_option_item" data-group="cover" data-name="컬러 양면인쇄" value="2"
+>
+                                <span>컬러 양면인쇄</span>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+
+
+                <input type="hidden" name="cover_color_separation_count" value="4" />
+
+                <tr>
+                    <th>
+                        후가공<span>/&nbsp;&nbsp;후가공에 대해서 궁금하다면 클릭</span>
+                        <!--클릭하면 현재 주문창에서 ? 눌렀을 때 나오는 팝업이 나오게 해주세요.ㅣ-->
+                        <a href="#optionItemDescLayer" class="open-layer-btn add-info" data-type="leftOptionTip" data-img="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/PostProcessing.png"
+                           data-title="후가공">
+                            <img src="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/BtnMore.png" alt="MORE">
+                        </a>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="RadioLabel">
+                            <label class="">
+                                <input type="checkbox" class="print_option_item" data-name="코팅"
+ onclick="select_first_finishing_item(this)"                                 name="cover_coating_name"
+checked                                />
+                                <span>코팅</span>
+                            </label>
+                            <label class="">
+                                <input type="checkbox" class="print_option_item" data-name="에폭시"
+ onclick="chkPaperGsmForEpoxy(this); select_first_finishing_item(this);"                                 name="has_epoxy"
+                                />
+                                <span>에폭시</span>
+                            </label>
+                            <label class="">
+                                <input type="checkbox" class="print_option_item" data-name="박"
+ onclick="select_first_finishing_item(this)"                                 name="foil_stampings"
+                                />
+                                <span>박</span>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="add-select-item" id="cover_coating_name" style="display:block;"  >
+                        <h4 class="GoodViewSTitle2">코팅</h4>
+                        <div class="RadioLabel" >
+
+                            <label class="InputRWhite">
+                                <input type="radio"
+                                       class="chkbox_matte print_option_item"
+                                       name="cover_coating_name" value="무광" data-parent="cover_coating_name"
+checked  />
+                                <span>무광</span>
+                            </label>
+                            <label class="InputRWhite">
+                                <input type="radio"
+                                       class="chkbox_glossy print_option_item"
+                                       name="cover_coating_name" value="유광" data-parent="cover_coating_name"
+  />
+                                <span>유광</span>
+                            </label>
+                            <label class="InputRWhite">
+                                <input type="radio"
+                                       class="chkbox_embossing print_option_item"
+                                       name="cover_coating_name" value="엠보" data-parent="cover_coating_name"
+  />
+                                <span>엠보</span>
+                            </label>
+                            <label class="InputRWhite">
+                                <input type="radio"
+                                       class="chkbox_anti_scratch print_option_item"
+                                       name="cover_coating_name" value="스크래치방지무광" data-parent="cover_coating_name"
+  />
+                                <span>흡집방지무광</span>
+                            </label>
+                        </div>
+
+        </div>
+
+
+    <div class="add-select-item" id="has_epoxy" >
+    <h4 class="GoodViewSTitle2">에폭시</h4>
+    <div class="RadioLabel">
+        <a href='javascript:;' id="epoxyUploadBtn" class="BtnGrayType1 epoxy-design-btn finishingUploadBtn dn">에폭시 파일 업로드</a>
+    </div>
+</div>
+                        <div class="add-select-item" id="foil_stampings"  >
+                        <h4 class="GoodViewSTitle2">박</h4>
+                        <div class="RadioLabel" >
+                            <label class="InputRWhite">
+                                <input type="checkbox"
+                                       class="chkbox_foil_name print_option_item"
+                                       name="foil_name[]" value="금박" data-parent="foil_stampings"
+ />
+                                <span>금박</span>
+                            </label>
+                            <label class="InputRWhite">
+                                <input type="checkbox"
+                                       class="chkbox_foil_name print_option_item"
+                                       name="foil_name[]" value="은박" data-parent="foil_stampings"
+ />
+                                <span>은박</span>
+                            </label>
+                            <label class="InputRWhite">
+                                <input type="checkbox"
+                                       class="chkbox_foil_name print_option_item"
+                                       name="foil_name[]" value="홀박" data-parent="foil_stampings"
+ />
+                                <span>홀로그램박</span>
+                            </label>
+                            <label class="InputRWhite">
+                                <input type="checkbox"
+                                       class="chkbox_foil_name print_option_item"
+                                       name="foil_name[]" value="청박" data-parent="foil_stampings"
+ />
+                                <span>청박</span>
+                            </label>
+                            <label class="InputRWhite">
+                                <input type="checkbox"
+                                       class="chkbox_foil_name print_option_item"
+                                       name="foil_name[]" value="적박" data-parent="foil_stampings"
+ />
+                                <span>적박</span>
+                            </label>
+                            <label class="InputRWhite">
+                                <input type="checkbox"
+                                       class="chkbox_foil_name print_option_item"
+                                       name="foil_name[]" value="먹박" data-parent="foil_stampings"
+ />
+                                <span>먹박</span>
+                            </label>
+
+                        </div>
+
+                        <div class="RadioLabel" style="margin-top: 16px;">
+                            <a href='javascript:;' id="foilUploadBtn" class="BtnGrayType1 foil-design-btn finishingUploadBtn">박 후가공 파일 업로드</a>
+                        </div>
+        </div>
+
+
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+</div>
+<!-- //책자인쇄주문_표지 -->
+
+<!-- 책자인쇄주문_내지// -->
+<div class="GoodViewInner">
+    <h3 class="GoodViewSTitle">내지</h3>
+    <div id="GoodViewFormType">
+        <table id="GoodViewTable">
+            <colgroup>
+                <col width="100%" />
+            </colgroup>
+            <tbody>
+            <tr>
+                <th>페이지 수</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="RadioLabel">
+                        <select id="num_pages" name="num_pages" data-group="inner" data-reqNm="페이지 수" class="print_option_item" required >
+                            <option  >2</option>
+                            <option  >4</option>
+                            <option  >6</option>
+                            <option  >8</option>
+                            <option  >10</option>
+                            <option  >12</option>
+                            <option  >14</option>
+                            <option  >16</option>
+                            <option  >18</option>
+                            <option  >20</option>
+                            <option  >22</option>
+                            <option  >24</option>
+                            <option  >26</option>
+                            <option  >28</option>
+                            <option  >30</option>
+                            <option  >32</option>
+                            <option  >34</option>
+                            <option  >36</option>
+                            <option  >38</option>
+                            <option  >40</option>
+                            <option  >42</option>
+                            <option  >44</option>
+                            <option  >46</option>
+                            <option  >48</option>
+                            <option  >50</option>
+                            <option  >52</option>
+                            <option  >54</option>
+                            <option  >56</option>
+                            <option  >58</option>
+                            <option  >60</option>
+                            <option  >62</option>
+                            <option  >64</option>
+                            <option  >66</option>
+                            <option  >68</option>
+                            <option  >70</option>
+                            <option  >72</option>
+                            <option  >74</option>
+                            <option  >76</option>
+                            <option  >78</option>
+                            <option  >80</option>
+                            <option  >82</option>
+                            <option  >84</option>
+                            <option  >86</option>
+                            <option  >88</option>
+                            <option  >90</option>
+                            <option  >92</option>
+                            <option  >94</option>
+                            <option  >96</option>
+                            <option  >98</option>
+                            <option  >100</option>
+                            <option  >102</option>
+                            <option  >104</option>
+                            <option  >106</option>
+                            <option  >108</option>
+                            <option  >110</option>
+                            <option  >112</option>
+                            <option  >114</option>
+                            <option  >116</option>
+                            <option  >118</option>
+                            <option selected >120</option>
+                            <option  >122</option>
+                            <option  >124</option>
+                            <option  >126</option>
+                            <option  >128</option>
+                            <option  >130</option>
+                            <option  >132</option>
+                            <option  >134</option>
+                            <option  >136</option>
+                            <option  >138</option>
+                            <option  >140</option>
+                            <option  >142</option>
+                            <option  >144</option>
+                            <option  >146</option>
+                            <option  >148</option>
+                            <option  >150</option>
+                            <option  >152</option>
+                            <option  >154</option>
+                            <option  >156</option>
+                            <option  >158</option>
+                            <option  >160</option>
+                            <option  >162</option>
+                            <option  >164</option>
+                            <option  >166</option>
+                            <option  >168</option>
+                            <option  >170</option>
+                            <option  >172</option>
+                            <option  >174</option>
+                            <option  >176</option>
+                            <option  >178</option>
+                            <option  >180</option>
+                            <option  >182</option>
+                            <option  >184</option>
+                            <option  >186</option>
+                            <option  >188</option>
+                            <option  >190</option>
+                            <option  >192</option>
+                            <option  >194</option>
+                            <option  >196</option>
+                            <option  >198</option>
+                            <option  >200</option>
+                            <option  >202</option>
+                            <option  >204</option>
+                            <option  >206</option>
+                            <option  >208</option>
+                            <option  >210</option>
+                            <option  >212</option>
+                            <option  >214</option>
+                            <option  >216</option>
+                            <option  >218</option>
+                            <option  >220</option>
+                            <option  >222</option>
+                            <option  >224</option>
+                            <option  >226</option>
+                            <option  >228</option>
+                            <option  >230</option>
+                            <option  >232</option>
+                            <option  >234</option>
+                            <option  >236</option>
+                            <option  >238</option>
+                            <option  >240</option>
+                            <option  >242</option>
+                            <option  >244</option>
+                            <option  >246</option>
+                            <option  >248</option>
+                            <option  >250</option>
+                            <option  >252</option>
+                            <option  >254</option>
+                            <option  >256</option>
+                            <option  >258</option>
+                            <option  >260</option>
+                            <option  >262</option>
+                            <option  >264</option>
+                            <option  >266</option>
+                            <option  >268</option>
+                            <option  >270</option>
+                            <option  >272</option>
+                            <option  >274</option>
+                            <option  >276</option>
+                            <option  >278</option>
+                            <option  >280</option>
+                            <option  >282</option>
+                            <option  >284</option>
+                            <option  >286</option>
+                            <option  >288</option>
+                            <option  >290</option>
+                            <option  >292</option>
+                            <option  >294</option>
+                            <option  >296</option>
+                            <option  >298</option>
+                            <option  >300</option>
+                            <option  >302</option>
+                            <option  >304</option>
+                            <option  >306</option>
+                            <option  >308</option>
+                            <option  >310</option>
+                            <option  >312</option>
+                            <option  >314</option>
+                            <option  >316</option>
+                            <option  >318</option>
+                            <option  >320</option>
+                            <option  >322</option>
+                            <option  >324</option>
+                            <option  >326</option>
+                            <option  >328</option>
+                            <option  >330</option>
+                            <option  >332</option>
+                            <option  >334</option>
+                            <option  >336</option>
+                            <option  >338</option>
+                            <option  >340</option>
+                            <option  >342</option>
+                            <option  >344</option>
+                            <option  >346</option>
+                            <option  >348</option>
+                            <option  >350</option>
+                            <option  >352</option>
+                            <option  >354</option>
+                            <option  >356</option>
+                            <option  >358</option>
+                            <option  >360</option>
+                            <option  >362</option>
+                            <option  >364</option>
+                            <option  >366</option>
+                            <option  >368</option>
+                            <option  >370</option>
+                            <option  >372</option>
+                            <option  >374</option>
+                            <option  >376</option>
+                            <option  >378</option>
+                            <option  >380</option>
+                            <option  >382</option>
+                            <option  >384</option>
+                            <option  >386</option>
+                            <option  >388</option>
+                            <option  >390</option>
+                            <option  >392</option>
+                            <option  >394</option>
+                            <option  >396</option>
+                            <option  >398</option>
+                            <option  >400</option>
+                            <option  >402</option>
+                            <option  >404</option>
+                            <option  >406</option>
+                            <option  >408</option>
+                            <option  >410</option>
+                            <option  >412</option>
+                            <option  >414</option>
+                            <option  >416</option>
+                            <option  >418</option>
+                            <option  >420</option>
+                            <option  >422</option>
+                            <option  >424</option>
+                            <option  >426</option>
+                            <option  >428</option>
+                            <option  >430</option>
+                            <option  >432</option>
+                            <option  >434</option>
+                            <option  >436</option>
+                            <option  >438</option>
+                            <option  >440</option>
+                            <option  >442</option>
+                            <option  >444</option>
+                            <option  >446</option>
+                            <option  >448</option>
+                            <option  >450</option>
+                            <option  >452</option>
+                            <option  >454</option>
+                            <option  >456</option>
+                            <option  >458</option>
+                            <option  >460</option>
+                            <option  >462</option>
+                            <option  >464</option>
+                            <option  >466</option>
+                            <option  >468</option>
+                            <option  >470</option>
+                            <option  >472</option>
+                            <option  >474</option>
+                            <option  >476</option>
+                            <option  >478</option>
+                            <option  >480</option>
+                            <option  >482</option>
+                            <option  >484</option>
+                            <option  >486</option>
+                            <option  >488</option>
+                            <option  >490</option>
+                            <option  >492</option>
+                            <option  >494</option>
+                            <option  >496</option>
+                            <option  >498</option>
+                            <option  >500</option>
+                            <option  >502</option>
+                            <option  >504</option>
+                            <option  >506</option>
+                            <option  >508</option>
+                            <option  >510</option>
+                            <option  >512</option>
+                            <option  >514</option>
+                            <option  >516</option>
+                            <option  >518</option>
+                            <option  >520</option>
+                            <option  >522</option>
+                            <option  >524</option>
+                            <option  >526</option>
+                            <option  >528</option>
+                            <option  >530</option>
+                            <option  >532</option>
+                            <option  >534</option>
+                            <option  >536</option>
+                            <option  >538</option>
+                            <option  >540</option>
+                            <option  >542</option>
+                            <option  >544</option>
+                            <option  >546</option>
+                            <option  >548</option>
+                            <option  >550</option>
+                            <option  >552</option>
+                            <option  >554</option>
+                            <option  >556</option>
+                            <option  >558</option>
+                            <option  >560</option>
+                            <option  >562</option>
+                            <option  >564</option>
+                            <option  >566</option>
+                            <option  >568</option>
+                            <option  >570</option>
+                            <option  >572</option>
+                            <option  >574</option>
+                            <option  >576</option>
+                            <option  >578</option>
+                            <option  >580</option>
+                            <option  >582</option>
+                            <option  >584</option>
+                            <option  >586</option>
+                            <option  >588</option>
+                            <option  >590</option>
+                            <option  >592</option>
+                            <option  >594</option>
+                            <option  >596</option>
+                            <option  >598</option>
+                            <option  >600</option>
+                            <option  >602</option>
+                            <option  >604</option>
+                            <option  >606</option>
+                            <option  >608</option>
+                            <option  >610</option>
+                            <option  >612</option>
+                            <option  >614</option>
+                            <option  >616</option>
+                            <option  >618</option>
+                            <option  >620</option>
+                            <option  >622</option>
+                            <option  >624</option>
+                            <option  >626</option>
+                            <option  >628</option>
+                            <option  >630</option>
+                            <option  >632</option>
+                            <option  >634</option>
+                            <option  >636</option>
+                            <option  >638</option>
+                            <option  >640</option>
+                            <option  >642</option>
+                            <option  >644</option>
+                            <option  >646</option>
+                            <option  >648</option>
+                            <option  >650</option>
+                            <option  >652</option>
+                            <option  >654</option>
+                            <option  >656</option>
+                            <option  >658</option>
+                            <option  >660</option>
+                            <option  >662</option>
+                            <option  >664</option>
+                            <option  >666</option>
+                            <option  >668</option>
+                            <option  >670</option>
+                            <option  >672</option>
+                            <option  >674</option>
+                            <option  >676</option>
+                            <option  >678</option>
+                            <option  >680</option>
+                            <option  >682</option>
+                            <option  >684</option>
+                            <option  >686</option>
+                            <option  >688</option>
+                            <option  >690</option>
+                            <option  >692</option>
+                            <option  >694</option>
+                            <option  >696</option>
+                            <option  >698</option>
+                            <option  >700</option>
+                            <option  >702</option>
+                            <option  >704</option>
+                            <option  >706</option>
+                            <option  >708</option>
+                            <option  >710</option>
+                            <option  >712</option>
+                            <option  >714</option>
+                            <option  >716</option>
+                            <option  >718</option>
+                            <option  >720</option>
+                            <option  >722</option>
+                            <option  >724</option>
+                            <option  >726</option>
+                            <option  >728</option>
+                            <option  >730</option>
+                            <option  >732</option>
+                            <option  >734</option>
+                            <option  >736</option>
+                            <option  >738</option>
+                            <option  >740</option>
+                            <option  >742</option>
+                            <option  >744</option>
+                            <option  >746</option>
+                            <option  >748</option>
+                            <option  >750</option>
+                            <option  >752</option>
+                            <option  >754</option>
+                            <option  >756</option>
+                            <option  >758</option>
+                            <option  >760</option>
+                            <option  >762</option>
+                            <option  >764</option>
+                            <option  >766</option>
+                            <option  >768</option>
+                            <option  >770</option>
+                            <option  >772</option>
+                            <option  >774</option>
+                            <option  >776</option>
+                            <option  >778</option>
+                            <option  >780</option>
+                            <option  >782</option>
+                            <option  >784</option>
+                            <option  >786</option>
+                            <option  >788</option>
+                            <option  >790</option>
+                            <option  >792</option>
+                            <option  >794</option>
+                            <option  >796</option>
+                            <option  >798</option>
+                            <option  >800</option>
+                        </select>
+                        Page
+                    </div>
+                    <div class="RadioLabel Mgt10">
+                        <a href='javascript:;' id="ipUploadBtn" class="BtnGrayType1">내지 파일 업로드</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <!-- 인쇄 -->
+                    인쇄<span>/&nbsp;&nbsp;인쇄에 대해서 궁금하다면 클릭</span>
+                    <!--클릭하면 현재 주문창에서 ? 눌렀을 때 나오는 팝업이 나오게 해주세요.ㅣ-->
+                    <a href="#optionItemDescLayer" class="open-layer-btn add-info" data-type="leftOptionTip" data-img="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/PrintingType.png"
+                       data-title="인쇄">
+                        <img src="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/BtnMore.png" alt="MORE">
+                    </a>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="RadioLabel">
+                        <select name="inner_color_separation_count" class="print_option_item" data-group="inner">
+                            <option value="4" data-name="컬러인쇄 (4도)"
+                            >
+                            컬러인쇄 (4도)
+                            </option>
+                            <option value="1" data-name="흑백인쇄 (1도)"
+                            >
+                            흑백인쇄 (1도)
+                            </option>
+                        </select>
+
+                        <select name="inner_printing_side" class="print_option_item" data-group="inner">
+                            <option value="2" data-name="양면인쇄"
+                            >
+                            양면인쇄
+                            </option>
+
+                            <option value="1" data-name="단면인쇄"
+                            >
+                            단면인쇄
+                            </option>
+
+                        </select>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <!-- 용지 -->
+                    용지<span>/&nbsp;&nbsp;인쇄용지에 대해서 궁금하다면 클릭</span>
+                    <!--클릭하면 현재 주문창에서 ? 눌렀을 때 나오는 팝업이 나오게 해주세요.ㅣ-->
+                    <a href="#optionItemDescLayer" class="open-layer-btn add-info" data-type="leftOptionTip" data-img="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/PaperType.png"
+                       data-title="용지">
+                        <img src="https://cdn-saas-web-81-194.cdn-nhncommerce.com/yeolimcnp22_godomall_com/data/skin/front/designbookR_blainsho/_dbook/img/BtnMore.png" alt="MORE">
+                    </a>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="CheckLabel">
+                        <label>
+                            <input type="checkbox" id="flyleaf_option" class="form-checkbox print_option_item useFlNextSelect" name="addtype_flyleaf"
+ />
+                            <span>면지</span>
+                        </label>
+                    </div>
+                    <div class="RadioLabel">
+                        <select id="inner_paper_name" name="inner_paper_name" class="paper_name print_option_item" data-group="inner">
+                            <option value="모조 미색" data-key="mojo_off_white"
+ selected  >
+                            모조 미색
+                            </option>
+                            <option value="모조 백색" data-key="mojo_bright_white"
+ >
+                            모조 백색
+                            </option>
+                            <option value="아트" data-key="art"
+ >
+                            아트
+                            </option>
+                            <option value="스노우" data-key="snow"
+ >
+                            스노우
+                            </option>
+                            <option value="에스플러스 미색" data-key="aplus_off_white"
+ >
+                            에스플러스 미색
+                            </option>
+                            <option value="에스플러스 백색" data-key="aplus_bright_white"
+ >
+                            에스플러스 백색
+                            </option>
+                            <option value="뉴플러스 백색" data-key="newplus_bright_white"
+ >
+                            뉴플러스 백색
+                            </option>
+                            <option value="뉴플러스 미색" data-key="newplus_off_white"
+ >
+                            뉴플러스 미색
+                            </option>
+                            <option value="아르떼 화이트" data-key="arte_white"
+ >
+                            아르떼 화이트
+                            </option>
+                            <option value="아르떼 내추럴" data-key="arte_natural"
+ >
+                            아르떼 내추럴
+                            </option>
+                            <option value="랑데뷰 화이트" data-key="rendezvous_white"
+ >
+                            랑데뷰 화이트
+                            </option>
+                            <option value="랑데뷰 내추럴" data-key="rendezvous_natural"
+ >
+                            랑데뷰 내추럴
+                            </option>
+                            <option value="앙상블 E클래스 고백색" data-key="ensemble_eclass_off_white"
+ >
+                            앙상블 E클래스 고백색
+                            </option>
+                            <option value="앙상블 E클래스 백색" data-key="ensemble_eclass_pure_white"
+ >
+                            앙상블 E클래스 백색
+                            </option>
+                        </select>
+
+                        <select id="inner_paper_gsm" name="inner_paper_gsm" class="paper_gsm print_option_item" data-group="inner" onchange="set_seneka()">
+                            <option value="80" data-thickness="90" selected>80g</option>
+                            <option value="100" data-thickness="110" >100g</option>
+                            <option value="120" data-thickness="140" >120g</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+
+            <tr class="add-select-item addtype_flyleaf"  >
+            <th>면지</th>
+            </tr>
+            <tr id="addtype_flyleaf" class="add-select-item addtype_flyleaf"  >
+            <td>
+                <div class="RadioLabel">
+                    <select name="flyleaf_paper_name" class="paper_name print_option_item flyleaf_option" data-group="flyleaf"
+disabled >
+                    <option value="밍크 계란" data-key="mink_egg"
+ >
+                    밍크 계란
+                    </option>
+                    <option value="밍크 연노랑" data-key="mink_yellow"
+ >
+                    밍크 연노랑
+                    </option>
+                    <option value="밍크 남색" data-key="mink_navy"
+ >
+                    밍크 남색
+                    </option>
+                    <option value="모조 미색" data-key="mojo_off_white"
+ >
+                    모조 미색
+                    </option>
+                    </select>
+                    <select name="flyleaf_paper_gsm" class="paper_gsm print_option_item flyleaf_option" data-group="flyleaf"
+disabled >
+                    <option value="120"
+ >
+                    120g
+                    </option>
+                    </select>
+                    <select name="flyleaf_num_pages_on_each_side" class="print_option_item flyleaf_option" data-group="flyleaf"
+disabled >
+                    <option value="1"
+ >
+                    앞뒤 1장씩
+                    </option>
+                    <option value="2"
+ >
+                    앞뒤 2장씩
+                    </option>
+                    </select>
+                </div>
+            </td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- //책자인쇄주문_내지 -->
+</div>
+<!-- //책자인쇄주문_표지&내지 -->
+
+<!-- 책자인쇄주문_디자인// -->
+<div class="GoodViewFormType">
+    <h3 class="GoodViewSTitle">디자인</h3>
+    <ul class="CoverDesign">
+        <li>
+            <a href="#designLayer" id="yoppBtn" class="btn_open_layer cover-design-btn" onclick="btnOpenLayer()">YOPP 셀프 디자인 편집기</a>
+            <ul class="CoverDesignExplan">
+                <li class="Explan">500가지 이상의 디자인을 이용해 내 책의 표지로 만들어 보세요.<br />디자인은 매주 업데이트 됩니다.</li>
+            </ul>
+        </li>
+		
