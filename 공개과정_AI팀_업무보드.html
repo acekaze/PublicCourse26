@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>공개과정 AI팀 업무보드</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#0f172a',
+            paper: '#f8f6f1',
+            sand: '#ebe3d3',
+            navy: '#0f2d68',
+            sky: '#4a7dff',
+            brass: '#b78c45',
+            mint: '#d7f3ea',
+            rose: '#ffe4e6'
+          },
+          boxShadow: {
+            plane: '0 20px 60px rgba(15,45,104,0.12)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(74,125,255,0.14), transparent 28%),
+        linear-gradient(180deg, #f8f6f1 0%, #f5f7fb 46%, #ffffff 100%);
+      color: #0f172a;
+    }
+    .grid-bg::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(15,45,104,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15,45,104,0.05) 1px, transparent 1px);
+      background-size: 32px 32px;
+      pointer-events: none;
+      mask-image: linear-gradient(180deg, rgba(0,0,0,0.55), transparent 95%);
+    }
+  </style>
+</head>
+<body class="grid-bg min-h-screen">
+  <main class="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10">
+    <section class="mb-8 overflow-hidden rounded-[32px] border border-slate-200/80 bg-white/85 p-6 shadow-plane backdrop-blur sm:p-8">
+      <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <div class="max-w-3xl">
+          <div class="mb-3 inline-flex items-center gap-2 rounded-full border border-navy/15 bg-navy/5 px-3 py-1 text-xs font-semibold tracking-[0.14em] text-navy">
+            공개과정 AI팀 워룸
+          </div>
+          <h1 class="text-3xl font-black tracking-tight text-ink sm:text-5xl">현업 강사를 위한 교수법 공개과정 업무보드</h1>
+          <p class="mt-4 text-base leading-7 text-slate-700 sm:text-lg">
+            목표는 하나입니다. 2026년 5월 1일 시작 전까지 공개과정을 <strong>팔리고 운영 가능한 상태</strong>로 잠그는 것.
+            좋은 문서보다 중요한 것은 <strong>신청 전환</strong>, <strong>운영 안정화</strong>, <strong>후속 자산화</strong>입니다.
+          </p>
+        </div>
+        <div class="grid gap-3 sm:grid-cols-3 lg:min-w-[420px]">
+          <div class="rounded-3xl border border-amber-200 bg-paper p-4">
+            <div class="text-xs font-semibold tracking-[0.12em] text-slate-500">D-DAY</div>
+            <div class="mt-2 text-3xl font-black text-navy">20일</div>
+            <div class="mt-1 text-sm text-slate-600">2026-04-11 → 2026-05-01</div>
+          </div>
+          <div class="rounded-3xl border border-sky-200 bg-sky/5 p-4">
+            <div class="text-xs font-semibold tracking-[0.12em] text-slate-500">최우선 KPI</div>
+            <div class="mt-2 text-base font-bold text-ink">신청 전환 + 운영 잠금</div>
+            <div class="mt-1 text-sm text-slate-600">문안 완성보다 신청 흐름이 먼저</div>
+          </div>
+          <div class="rounded-3xl border border-emerald-200 bg-mint p-4">
+            <div class="text-xs font-semibold tracking-[0.12em] text-slate-500">핵심 결과물</div>
+            <div class="mt-2 text-base font-bold text-ink">대표 강의 1편 개선안</div>
+            <div class="mt-1 text-sm text-slate-600">홍보도 운영도 이 결과물 중심</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8 grid gap-4 lg:grid-cols-4">
+      <div class="rounded-3xl border border-slate-200 bg-white/85 p-5 shadow-sm">
+        <div class="text-xs font-semibold tracking-[0.12em] text-slate-500">팀장</div>
+        <h2 class="mt-2 text-xl font-black text-navy">Hermes</h2>
+        <ul class="mt-3 space-y-2 text-sm leading-6 text-slate-700">
+          <li>우선순위 통제</li>
+          <li>작업 배분/재배치</li>
+          <li>문서 일관성 검수</li>
+          <li>병목 발견 및 보고</li>
+        </ul>
+      </div>
+      <div class="rounded-3xl border border-slate-200 bg-white/85 p-5 shadow-sm">
+        <div class="text-xs font-semibold tracking-[0.12em] text-slate-500">에이전트 A</div>
+        <h2 class="mt-2 text-xl font-black text-ink">상품/메시지</h2>
+        <ul class="mt-3 space-y-2 text-sm leading-6 text-slate-700">
+          <li>상세소개문</li>
+          <li>신청안내문</li>
+          <li>가격/모듈 구조</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+      <div class="rounded-3xl border border-slate-200 bg-white/85 p-5 shadow-sm">
+        <div class="text-xs font-semibold tracking-[0.12em] text-slate-500">에이전트 B</div>
+        <h2 class="mt-2 text-xl font-black text-ink">모집/전환</h2>
+        <ul class="mt-3 space-y-2 text-sm leading-6 text-slate-700">
+          <li>직접 안내 메시지</li>
+          <li>SNS 1·2차 콘텐츠</li>
+          <li>문의 응답 문답</li>
+          <li>잔여좌석 재안내</li>
+        </ul>
+      </div>
+      <div class="rounded-3xl border border-slate-200 bg-white/85 p-5 shadow-sm">
+        <div class="text-xs font-semibold tracking-[0.12em] text-slate-500">에이전트 C/D</div>
+        <h2 class="mt-2 text-xl font-black text-ink">운영/자산화</h2>
+        <ul class="mt-3 space-y-2 text-sm leading-6 text-slate-700">
+          <li>사전진단/참가자 안내</li>
+          <li>운영 체크리스트/피드백 기준</li>
+          <li>후기/추천사 수집</li>
+          <li>다음 기수 재사용 자산 정리</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mb-8 rounded-[28px] border border-slate-200 bg-white/85 p-6 shadow-sm">
+      <div class="flex items-center justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-black text-ink">오늘 바로 잠가야 하는 의사결정</h2>
+          <p class="mt-2 text-sm leading-6 text-slate-600">이 6개가 미확정이면 나머지 문서와 모집 동선이 계속 흔들립니다.</p>
+        </div>
+        <div class="rounded-full bg-rose px-4 py-2 text-xs font-bold tracking-[0.12em] text-rose-700">대표 확정 필요</div>
+      </div>
+      <div class="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <div class="rounded-2xl border border-rose-200 bg-rose/50 p-4"><strong>1.</strong> 최종 과정명</div>
+        <div class="rounded-2xl border border-rose-200 bg-rose/50 p-4"><strong>2.</strong> 장소 / 오프라인 여부</div>
+        <div class="rounded-2xl border border-rose-200 bg-rose/50 p-4"><strong>3.</strong> 신청 폼 경로</div>
+        <div class="rounded-2xl border border-rose-200 bg-rose/50 p-4"><strong>4.</strong> 결제 방식</div>
+        <div class="rounded-2xl border border-rose-200 bg-rose/50 p-4"><strong>5.</strong> 환불 기준</div>
+        <div class="rounded-2xl border border-rose-200 bg-rose/50 p-4"><strong>6.</strong> 정원 / 최소 개설 인원 / 마감일</div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <div class="mb-4 flex items-end justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-black text-ink">20일 액션플랜</h2>
+          <p class="mt-2 text-sm leading-6 text-slate-600">Phase별로 끊어 진행합니다. 각 Phase는 문서 작성이 아니라 상태 잠금이 목표입니다.</p>
+        </div>
+      </div>
+      <div class="grid gap-5 xl:grid-cols-3">
+        <article class="rounded-[28px] border border-slate-200 bg-white/90 p-6 shadow-sm xl:col-span-1">
+          <div class="mb-3 inline-flex rounded-full bg-navy px-3 py-1 text-xs font-bold tracking-[0.12em] text-white">PHASE 1 · 4/11~4/14</div>
+          <h3 class="text-xl font-black">상품 정의 잠금</h3>
+          <p class="mt-2 text-sm leading-6 text-slate-600">무엇을 파는지, 누구에게 파는지, 어떤 결과물을 주는지 흔들리지 않게 고정.</p>
+          <ul class="mt-4 space-y-3 text-sm leading-6 text-slate-700">
+            <li>• 과정 한 문장 확정</li>
+            <li>• 최종 과정명 확정</li>
+            <li>• 정원 / 최소 개설 / 장소 / 마감일 확정</li>
+            <li>• 신청·결제·환불 구조 확정</li>
+            <li>• 상세소개문 / 신청안내문 / 가격정책 / 프리미엄 운영장치 완성</li>
+          </ul>
+          <div class="mt-4 rounded-2xl bg-paper p-4 text-sm font-semibold text-navy">핵심 산출물: 신청 판단에 필요한 문서 4종</div>
+        </article>
+
+        <article class="rounded-[28px] border border-slate-200 bg-white/90 p-6 shadow-sm xl:col-span-1">
+          <div class="mb-3 inline-flex rounded-full bg-sky px-3 py-1 text-xs font-bold tracking-[0.12em] text-white">PHASE 2 · 4/15~4/19</div>
+          <h3 class="text-xl font-black">모집 오픈</h3>
+          <p class="mt-2 text-sm leading-6 text-slate-600">좋은 소개보다 실제 신청 동선이 먼저입니다. 신청서, 배포 문안, 1차 네트워크 발송까지 완료.</p>
+          <ul class="mt-4 space-y-3 text-sm leading-6 text-slate-700">
+            <li>• 신청 폼 완성</li>
+            <li>• 직접 안내 메시지 완성</li>
+            <li>• SNS 첫 콘텐츠 3종 완성</li>
+            <li>• FAQ / 문의 응답 문답 완성</li>
+            <li>• 모집 페이지 / 신청 경로 오픈</li>
+            <li>• 1차 네트워크 직접 발송 시작</li>
+          </ul>
+          <div class="mt-4 rounded-2xl bg-sky/10 p-4 text-sm font-semibold text-navy">핵심 산출물: 배포 가능한 문안 세트 + 신청 링크</div>
+        </article>
+
+        <article class="rounded-[28px] border border-slate-200 bg-white/90 p-6 shadow-sm xl:col-span-1">
+          <div class="mb-3 inline-flex rounded-full bg-brass px-3 py-1 text-xs font-bold tracking-[0.12em] text-white">PHASE 3 · 4/20~4/26</div>
+          <h3 class="text-xl font-black">전환 압축</h3>
+          <p class="mt-2 text-sm leading-6 text-slate-600">문의 방치 금지. 관심자를 신청으로 옮기고 신청자를 운영 준비로 연결.</p>
+          <ul class="mt-4 space-y-3 text-sm leading-6 text-slate-700">
+            <li>• 미신청 관심자 재안내</li>
+            <li>• 2차 콘텐츠 발행</li>
+            <li>• 후기·사례형 보강 콘텐츠</li>
+            <li>• 잔여 좌석 기준 재안내</li>
+            <li>• 추천 등록 혜택 안내</li>
+            <li>• 신청자 현황표 / 사전진단 폼 운영</li>
+          </ul>
+          <div class="mt-4 rounded-2xl bg-amber-50 p-4 text-sm font-semibold text-navy">핵심 산출물: 신청자 명단 + 사전진단 발송</div>
+        </article>
+
+        <article class="rounded-[28px] border border-slate-200 bg-white/90 p-6 shadow-sm xl:col-span-2">
+          <div class="mb-3 inline-flex rounded-full bg-emerald-600 px-3 py-1 text-xs font-bold tracking-[0.12em] text-white">PHASE 4 · 4/27~4/30</div>
+          <h3 class="text-xl font-black">운영 잠금</h3>
+          <p class="mt-2 text-sm leading-6 text-slate-600">운영 당일에 판단하지 않도록 사전 제출, 안내문, 리허설, 체크리스트를 끝냅니다.</p>
+          <div class="mt-4 grid gap-4 md:grid-cols-2">
+            <ul class="space-y-3 text-sm leading-6 text-slate-700">
+              <li>• 참가자 확정</li>
+              <li>• 대표 강의 자료 사전 제출 완료</li>
+              <li>• 참가자 안내문 발송</li>
+              <li>• 피드백 기준표 확정</li>
+            </ul>
+            <ul class="space-y-3 text-sm leading-6 text-slate-700">
+              <li>• 운영 체크리스트 확정</li>
+              <li>• 운영 리허설 1회</li>
+              <li>• 후기/사진/추천사 수집 방식 확정</li>
+              <li>• 산출물 기록 방식 확정</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="rounded-[28px] border border-slate-200 bg-white/90 p-6 shadow-sm xl:col-span-1">
+          <div class="mb-3 inline-flex rounded-full bg-slate-800 px-3 py-1 text-xs font-bold tracking-[0.12em] text-white">PHASE 5~6 · 5/1~5/6</div>
+          <h3 class="text-xl font-black">운영 + 자산화</h3>
+          <ul class="mt-4 space-y-3 text-sm leading-6 text-slate-700">
+            <li>• 현장 이슈 / 피드백 / 산출물 기록</li>
+            <li>• 후기와 추천사 수집</li>
+            <li>• 사후 안내 발송</li>
+            <li>• 사례 후보 정리</li>
+            <li>• 다음 기수 재사용 자료 분류</li>
+          </ul>
+          <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm font-semibold text-navy">핵심 산출물: 다음 기수에 바로 쓰는 증거 자료</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mb-8 rounded-[28px] border border-slate-200 bg-white/85 p-6 shadow-sm">
+      <div class="flex items-center justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-black text-ink">이번 주 업무보드</h2>
+          <p class="mt-2 text-sm leading-6 text-slate-600">가장 중요한 것은 1차 문서와 신청 동선입니다.</p>
+        </div>
+        <div class="rounded-full bg-navy px-4 py-2 text-xs font-bold tracking-[0.12em] text-white">주간 집중</div>
+      </div>
+      <div class="mt-6 grid gap-5 xl:grid-cols-4">
+        <div class="rounded-3xl border border-slate-200 bg-paper p-5">
+          <div class="mb-3 text-xs font-bold tracking-[0.12em] text-slate-500">BACKLOG</div>
+          <div class="space-y-3 text-sm leading-6 text-slate-700">
+            <div class="rounded-2xl border border-slate-200 bg-white p-3">최종 과정명 확정</div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-3">장소 / 마감일 확정</div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-3">결제 / 환불 기준 확정</div>
+          </div>
+        </div>
+        <div class="rounded-3xl border border-sky-200 bg-sky/5 p-5">
+          <div class="mb-3 text-xs font-bold tracking-[0.12em] text-slate-500">IN PROGRESS</div>
+          <div class="space-y-3 text-sm leading-6 text-slate-700">
+            <div class="rounded-2xl border border-sky-200 bg-white p-3">상세소개문 다듬기</div>
+            <div class="rounded-2xl border border-sky-200 bg-white p-3">신청안내문 잠금</div>
+            <div class="rounded-2xl border border-sky-200 bg-white p-3">모듈구조/가격정책 정리</div>
+            <div class="rounded-2xl border border-sky-200 bg-white p-3">프리미엄 운영장치 명문화</div>
+          </div>
+        </div>
+        <div class="rounded-3xl border border-amber-200 bg-amber-50 p-5">
+          <div class="mb-3 text-xs font-bold tracking-[0.12em] text-slate-500">NEXT UP</div>
+          <div class="space-y-3 text-sm leading-6 text-slate-700">
+            <div class="rounded-2xl border border-amber-200 bg-white p-3">신청 폼 문항 완성</div>
+            <div class="rounded-2xl border border-amber-200 bg-white p-3">직접 안내 메시지 완성</div>
+            <div class="rounded-2xl border border-amber-200 bg-white p-3">SNS 첫 콘텐츠 3종 완성</div>
+            <div class="rounded-2xl border border-amber-200 bg-white p-3">FAQ / 문의응답 문답 정리</div>
+          </div>
+        </div>
+        <div class="rounded-3xl border border-emerald-200 bg-mint p-5">
+          <div class="mb-3 text-xs font-bold tracking-[0.12em] text-slate-500">DONE 정의</div>
+          <div class="space-y-3 text-sm leading-6 text-slate-700">
+            <div class="rounded-2xl border border-emerald-200 bg-white p-3">누구에게 맞는지 3초 안에 보임</div>
+            <div class="rounded-2xl border border-emerald-200 bg-white p-3">대표 결과물 1편 개선안이 맨 앞에 보임</div>
+            <div class="rounded-2xl border border-emerald-200 bg-white p-3">신청 링크가 실제 작동함</div>
+            <div class="rounded-2xl border border-emerald-200 bg-white p-3">문의 대응 문구가 같은 메시지로 움직임</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8 grid gap-5 lg:grid-cols-2">
+      <article class="rounded-[28px] border border-slate-200 bg-white/85 p-6 shadow-sm">
+        <h2 class="text-2xl font-black text-ink">리스크 보드</h2>
+        <div class="mt-5 space-y-4 text-sm leading-6 text-slate-700">
+          <div class="rounded-2xl border border-rose-200 bg-rose/40 p-4">
+            <strong>P1.</strong> 신청 경로가 늦게 열리면 문서가 좋아도 전환이 안 됩니다.
+          </div>
+          <div class="rounded-2xl border border-rose-200 bg-rose/40 p-4">
+            <strong>P1.</strong> AI / SNS / 브랜딩 요소를 앞세우면 핵심 상품 메시지가 흐려집니다.
+          </div>
+          <div class="rounded-2xl border border-amber-200 bg-amber-50 p-4">
+            <strong>P2.</strong> 너무 많은 문서를 동시에 완벽하게 다듬으려 하면 잠금 시점이 늦어집니다.
+          </div>
+          <div class="rounded-2xl border border-amber-200 bg-amber-50 p-4">
+            <strong>P2.</strong> 운영 문서가 모집 이후에 늦게 나오면 참가자 경험이 흔들립니다.
+          </div>
+        </div>
+      </article>
+
+      <article class="rounded-[28px] border border-slate-200 bg-white/85 p-6 shadow-sm">
+        <h2 class="text-2xl font-black text-ink">작업 원칙</h2>
+        <div class="mt-5 space-y-4 text-sm leading-6 text-slate-700">
+          <div class="rounded-2xl border border-slate-200 bg-paper p-4">설명은 <strong>누구 · 문제 · 진행 방식 · 결과물</strong> 순서로 쓴다.</div>
+          <div class="rounded-2xl border border-slate-200 bg-paper p-4">듣기 좋은 말보다 <strong>신청 판단에 필요한 정보</strong>를 먼저 준다.</div>
+          <div class="rounded-2xl border border-slate-200 bg-paper p-4">대표 결과물은 언제나 <strong>강의 1편 개선안</strong>이다.</div>
+          <div class="rounded-2xl border border-slate-200 bg-paper p-4">모든 문서는 다음 기수 재사용을 위해 <strong>md 기준 자산</strong>으로 남긴다.</div>
+        </div>
+      </article>
+    </section>
+
+    <section class="rounded-[28px] border border-slate-200 bg-white/85 p-6 shadow-sm">
+      <h2 class="text-2xl font-black text-ink">핵심 파일 매핑</h2>
+      <div class="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3 text-sm leading-6 text-slate-700">
+        <div class="rounded-2xl border border-slate-200 bg-paper p-4">
+          <div class="font-bold text-navy">전략 기준 문서</div>
+          <div class="mt-2 font-mono text-xs">공개과정_실행총괄_2026-05-01_02.md</div>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-paper p-4">
+          <div class="font-bold text-navy">상품 메시지</div>
+          <div class="mt-2 font-mono text-xs">교수법공개과정_상세소개문초안.md</div>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-paper p-4">
+          <div class="font-bold text-navy">신청 동선</div>
+          <div class="mt-2 font-mono text-xs">교수법공개과정_신청안내문초안.md</div>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-paper p-4">
+          <div class="font-bold text-navy">가격/구조</div>
+          <div class="mt-2 font-mono text-xs">교수법공개과정_모듈구조및가격정책초안.md</div>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-paper p-4">
+          <div class="font-bold text-navy">모집 문안</div>
+          <div class="mt-2 font-mono text-xs">교수법공개과정_직접안내메시지초안.md / 교수법공개과정_SNS첫콘텐츠3종.md</div>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-paper p-4">
+          <div class="font-bold text-navy">운영 준비</div>
+          <div class="mt-2 font-mono text-xs">FAQ / 사전진단 / 참가자안내문 / 운영체크리스트 / 피드백기준표</div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
